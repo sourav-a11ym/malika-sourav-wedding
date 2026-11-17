@@ -20,20 +20,20 @@ window.WEDDING = {
   music: 'assets/wedding-background.mp3', // New uploaded wedding invitation music; starts when OPEN INVITATION is tapped
   // Our Moments: provide separate desktop and mobile crops for each photo.
   // Replace each placeholder with its matching filename in /assets.
-  photos: {
-    main: {
-      desktop: 'assets/couple-main-desktop.jpg', // e.g. assets/couple-main-desktop.jpg
-      mobile: 'assets/couple-main-mobile.jpg'   // e.g. assets/couple-main-mobile.jpg
-    },
-    second: {
-      desktop: 'assets/couple-second-desktop.jpg', // e.g. assets/couple-second-desktop.jpg
-      mobile: 'assets/couple-second-mobile.jpg'   // e.g. assets/couple-second-mobile.jpg
-    },
-    third: {
-      desktop: 'assets/couple-third-desktop.jpg', // e.g. assets/couple-third-desktop.jpg
-      mobile: 'assets/couple-third-mobile.jpg'   // e.g. assets/couple-third-mobile.jpg
-    }
+photos: {
+  main: {
+    desktop: 'assets/couple-main-desktop.jpg',
+    mobile: 'assets/couple-main-mobile.jpg'
   },
+  second: {
+    desktop: 'assets/couple-second-desktop.jpg',
+    mobile: 'assets/couple-second-mobile.jpg'
+  },
+  third: {
+    desktop: 'assets/couple-third-desktop.jpg',
+    mobile: 'assets/couple-third-mobile.jpg'
+  }
+},
   events: [
     {
       title: 'Gaye Holud',
