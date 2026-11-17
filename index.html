@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f1eb">
+  <meta name="description" content="Malika Mandal and Sourav Mondal invite you to celebrate Mehandi, Haldi and their wedding in Malda in December 2026.">
+  <title>Malika &amp; Sourav | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="bride-side.css">
+</head>
+<body class="gate-closed">
+  <!-- GATE: genuine animated left/right doors, not a screenshot pasted over the page -->
+  <div class="invitation-gate" id="invitationGate" aria-label="Wedding invitation cover">
+    <div class="gate-door gate-door--left" aria-hidden="true">
+    </div>
+    <div class="gate-door gate-door--right" aria-hidden="true">
+    </div>
+    <!-- Independent, fully visible, fixed-size motifs; mobile shows only TL + BR. -->
+    <div class="gate-motifs" aria-hidden="true">
+      <div class="gate-motif gate-motif--top-left"><img src="assets/cover-motif-top-left.webp" alt=""></div>
+      <div class="gate-motif gate-motif--top-right"><img src="assets/cover-motif-top-left.webp" alt=""></div>
+      <div class="gate-motif gate-motif--bottom-left"><img src="assets/cover-motif-bottom-right.webp" alt=""></div>
+      <div class="gate-motif gate-motif--bottom-right"><img src="assets/cover-motif-bottom-right.webp" alt=""></div>
+    </div>
+    <div class="gate-center" id="gateCenter">
+      <!-- Zoom the cover's FOREGROUND as a group, keeping the floral doors static. -->
+      <div class="gate-intro is-animating" id="gateIntro">
+        <div class="gate-diamond"><span data-bind="initials">M&amp;S</span></div>
+        <div class="gate-names"><span data-bind="displayFirst">Malika</span> <span class="amp">&amp;</span> <span data-bind="displaySecond">Sourav</span></div>
+        <span class="gate-rule" aria-hidden="true"></span>
+        <button class="open-invitation" id="openInvitation" type="button">OPEN INVITATION <span aria-hidden="true">✧</span></button>
+      </div>
+    </div>
+  </div>
+
+  <main id="invitationMain" tabindex="-1">
+    <!-- 1 / COVER / PALACE -->
+    <section class="hero" id="top" aria-label="Wedding announcement">
+      <div class="hero-stage" id="heroStage">
+      <div class="hero-sky"></div>
+      <div class="palace-image" aria-hidden="true"></div>
+      <div class="hero-content" id="heroContent">
+        <div class="idol-float"><img class="ganesha intro-piece intro-ganesha" src="assets/ganesha-gold-no-ring.png" alt="Gold Ganesha idol"></div>
+        <div class="prayer-float"><div class="prayer intro-piece intro-prayer">SHREE GANESHAY NAMAH</div></div>
+        <div class="eyebrow hero-eyebrow intro-piece intro-eyebrow"><span class="invitation-heading-text">YOU ARE INVITED TO THE WEDDING OF</span></div>
+        <span class="tiny-diamond intro-piece intro-diamond" aria-hidden="true">✧</span>
+        <h1 class="hero-names" aria-label="Malika and Sourav"><span class="hero-name hero-name--bride intro-piece intro-bride" data-bind="displayFirst">Malika</span><span class="hero-amp intro-piece intro-amp">&amp;</span><span class="hero-name hero-name--groom intro-piece intro-groom" data-bind="displaySecond">Sourav</span></h1>
+      </div>
+      <a href="#couple" class="scroll-down" aria-label="Scroll to meet the couple"><span>SCROLL DOWN</span><span class="down-arrow" aria-hidden="true">⌄</span></a>
+      </div><!-- /hero-stage: pinned palace beneath sliding introduction -->
+    </section>
+
+    <!-- 2 / MEET THE COUPLE -->
+    <section class="meet section-cream" id="couple">
+      <div class="section-inner meet-inner">
+        <div class="meet-heading reveal">
+          <p class="section-label">MEET THE COUPLE</p>
+          <h2 class="script-heading">Two Souls, One Destiny</h2>
+          <div class="gold-flourish"></div>
+        </div>
+        <div class="couple-cards">
+          <article class="person-card reveal">
+            <div class="person-tag">THE BRIDE</div>
+            <h3 data-bind="brideFull">Malika Mandal</h3>
+            <p class="parent-text" data-bind="brideParents">Daughter of Mr. Madhusudan Mandal and Mrs. Sima Mandal</p>
+            <blockquote class="couple-quote" data-bind="brideQuote">“Two souls with but a single thought, two hearts that beat as one.”</blockquote>
+          </article>
+          <span class="couple-connector reveal">&amp;</span>
+          <article class="person-card reveal">
+            <div class="person-tag">THE GROOM</div>
+            <h3 data-bind="groomFull">Sourav Mondal</h3>
+            <p class="parent-text" data-bind="groomParents">Son of Late Chandi Charan Mondal and Mrs. Bela Rani Mondal</p>
+            <blockquote class="couple-quote" data-bind="groomQuote">“To love and be loved is to feel the sun from both sides. Join us as we begin our forever.”</blockquote>
+          </article>
+        </div>
+        <div class="meet-section-separator reveal" aria-hidden="true"><span class="separator-line"></span><span class="separator-emblem"></span><span class="separator-line"></span></div>
+      </div>
+    </section>
+
+    <!-- Custom couple-photo section; add your own photographs -->
+    <section class="memories section-cream" id="memories">
+      <div class="section-inner">
+        <header class="centered reveal">
+          <p class="section-label">A LOVE WORTH CELEBRATING</p>
+          <h2 class="main-section-heading">Our Moments</h2>
+          <p class="memories-subhead">The beautiful moments that brought us here</p>
+        </header>
+        <div class="photo-gallery">
+          <figure class="photo-frame photo-frame--main reveal">
+            <picture data-gallery-photo="main">
+              <source media="(max-width: 600px)" srcset="assets/couple-placeholder.svg">
+              <img src="assets/couple-placeholder.svg" alt="Malika and Sourav on the heritage staircase" loading="lazy" decoding="async">
+            </picture>
+            <figcaption>TOGETHER, ALWAYS</figcaption>
+          </figure>
+          <figure class="photo-frame photo-frame--small reveal">
+            <picture data-gallery-photo="second">
+              <source media="(max-width: 600px)" srcset="assets/couple-placeholder.svg">
+              <img src="assets/couple-placeholder.svg" alt="Malika and Sourav in the heritage corridor" loading="lazy" decoding="async">
+            </picture>
+          </figure>
+          <figure class="photo-frame photo-frame--small reveal">
+            <picture data-gallery-photo="third">
+              <source media="(max-width: 600px)" srcset="assets/couple-placeholder.svg">
+              <img src="assets/couple-placeholder.svg" alt="An intimate portrait of Malika and Sourav" loading="lazy" decoding="async">
+            </picture>
+          </figure>
+        </div>
+        <div class="small-ornament" aria-hidden="true">✦</div>
+      </div>
+    </section>
+
+    <!-- 3 / INTERACTIVE SAVE-THE-DATE REVEAL -->
+    <section class="countdown section-cream" id="countdown" aria-labelledby="countdownTitle">
+      <div class="faded-palace" aria-hidden="true"></div>
+      <div class="section-inner countdown-inner reveal">
+        <h2 class="countdown-title" id="countdownTitle">Awaiting the<br>Auspicious<br>Moment</h2>
+        <p class="countdown-caption date-caption" id="countdownCaption" aria-live="polite">
+          <span class="caption-before" id="captionBefore">UNTIL WE SAY FOREVER</span>
+          <span class="caption-after" id="captionAfter" aria-hidden="true">SAVE THE DATE</span>
+        </p>
+        <div class="hairline date-intro-rule" aria-hidden="true"></div>
+
+        <div class="date-reveal" id="dateReveal">
+          <div class="date-reveal-frame" id="dateRevealFrame">
+            <div class="date-reveal-content" id="dateRevealContent" aria-hidden="true">
+              <p class="date-card-month" id="weddingMonth">December</p>
+              <p class="date-card-day" id="weddingDate">13</p>
+              <p class="date-card-year" id="weddingYear">2026</p>
+              <div class="date-card-rule" aria-hidden="true"></div>
+              <div class="date-countdown" aria-label="Time remaining until the wedding date">
+                <div class="date-clock-unit"><strong id="days">--</strong><span>DAYS</span></div>
+                <span class="date-clock-colon" aria-hidden="true">:</span>
+                <div class="date-clock-unit"><strong id="hours">--</strong><span>HOURS</span></div>
+                <span class="date-clock-colon" aria-hidden="true">:</span>
+                <div class="date-clock-unit"><strong id="minutes">--</strong><span>MINUTES</span></div>
+                <span class="date-clock-colon" aria-hidden="true">:</span>
+                <div class="date-clock-unit"><strong id="seconds">--</strong><span>SECONDS</span></div>
+              </div>
+            </div>
+            <div class="date-door date-door-left" aria-hidden="true"></div>
+            <div class="date-door date-door-right" aria-hidden="true"></div>
+            <button class="date-seal" id="revealWeddingDate" type="button" aria-label="Reveal Malika and Sourav's wedding date" aria-controls="dateRevealContent" aria-expanded="false">
+              <span class="date-seal-star" aria-hidden="true"></span>
+              <span class="date-seal-label">TAP TO REVEAL</span>
+            </button>
+          </div>
+          <p class="date-reveal-instruction sr-only" id="dateRevealInstruction">TAP TO REVEAL</p>
+          <p class="sr-only" id="dateRevealAnnouncement" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen-wide celebration is decorative and never blocks controls. -->
+    <div class="date-celebration" id="dateCelebration" aria-hidden="true">
+      <canvas id="dateConfettiCanvas"></canvas>
+    </div>
+
+    <!-- 4 / CEREMONIES -->
+    <section class="events section-cream" id="events">
+      <div class="section-inner">
+        <div class="centered reveal">
+          <h2 class="main-section-heading">The Celebrations</h2>
+          <p class="section-subhead">Join us in our joy</p>
+        </div>
+        <div class="event-list" id="eventsContainer"></div>
+      </div>
+    </section>
+
+    <!-- 5 / HEARTFELT INVITATION (replaces the former venue tabs/maps) -->
+    <section class="invitation-note section-cream" id="invitation-note" aria-labelledby="invitationNoteTitle">
+      <div class="invitation-palace" aria-hidden="true"></div>
+      <div class="invitation-note-ornament invitation-note-ornament--right" aria-hidden="true"></div>
+      <div class="section-inner invitation-note-inner">
+        <div class="invitation-note-card reveal">
+          <div class="invitation-note-topline" aria-hidden="true"></div>
+          <p class="invitation-note-eyebrow">FROM OUR HEARTS TO YOURS</p>
+          <h2 id="invitationNoteTitle">Your Presence, Our Joy</h2>
+          <div class="invitation-note-flourish" aria-hidden="true"><span></span><span class="invitation-note-diamond">✧</span><span></span></div>
+          <p class="invitation-note-message" data-bind="invitationMessage">As two hearts become one, it would be an honour to have you beside us. Together with our families, we invite you to share in our joy and grace our wedding with your love, laughter, and blessings as we begin our new chapter.</p>
+          <p class="invitation-note-signoff">WITH LOVE,</p>
+          <p class="invitation-note-names"><span data-bind="displayFirst">Malika</span><span class="invitation-note-amp"> &amp; </span><span data-bind="displaySecond">Sourav</span></p>
+          <div class="meet-section-separator invitation-note-separator" aria-hidden="true"><span class="separator-line"></span><span class="separator-emblem"></span><span class="separator-line"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 / THANK YOU -->
+    <footer class="thanks" id="thanks">
+      <div class="thanks-palace" aria-hidden="true"></div>
+      <div class="thanks-heart-layer" id="thanksHeartLayer" aria-hidden="true"></div>
+      <div class="thanks-content reveal">
+        <h2>Thank You</h2>
+        <div class="thanks-rule" aria-hidden="true"></div>
+        <p class="thanks-quote" data-bind="thankYou">“Your presence and blessings will make our celebrations truly special.”</p>
+      </div>
+    </footer>
+  </main>
+
+  <button class="return-to-cover" id="returnCover" aria-label="Return to invitation cover" title="Return to cover">← <span>Back</span></button>
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Mute background music" aria-pressed="false" title="Mute background music" data-muted="false" hidden>
+    <span class="sound-icon sound-icon--on" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.7 5.4 6.8 9H3.7v6h3.1l3.9 3.6c.7.6 1.6.1 1.6-.7V6.1c0-.8-.9-1.3-1.6-.7Z"/><path d="M15.2 9a4.5 4.5 0 0 1 0 6"/><path d="M17.7 6.5a8 8 0 0 1 0 11"/></svg></span>
+    <span class="sound-icon sound-icon--off" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.7 5.4 6.8 9H3.7v6h3.1l3.9 3.6c.7.6 1.6.1 1.6-.7V6.1c0-.8-.9-1.3-1.6-.7Z"/><path d="m16 9 5 6m0-6-5 6"/></svg></span>
+    <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  </button>
+  <audio id="weddingMusic" loop preload="auto" playsinline></audio>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <script src="config.js"></script>
+  <script src="bride-side-override.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,3021 @@
+/* Sourav & Malika invitation — consolidated from the approved Version 54 build. */
+
+/* ===== Original stylesheet: styles.css ===== */
+:root{
+  --paper:#faf5ef;--ivory:#f7f1ea;--white:#fffdfa;--brown:#4f392b;
+  --text:#523b2b;--gold:#c49a3c;--deep-gold:#8d6738;--line:#dfcba8;
+  --navy:#1e3a5d;--wine:#812045;--sans:'Montserrat','DM Sans',Arial,sans-serif;
+  --serif:'Cormorant Garamond',Georgia,serif;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}body{margin:0;background:var(--paper);color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased}body.gate-closed{overflow:hidden}button,a{-webkit-tap-highlight-color:transparent}a{text-decoration:none;color:inherit}button{font:inherit}button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:4px}img{display:block;max-width:100%}::selection{background:#e5c17a;color:#4f392b}
+.section-inner{width:min(100% - 40px,1160px);margin-inline:auto;position:relative;z-index:2}.section-cream{background-color:var(--paper)}.centered{text-align:center}.section-label{font-size:11px;color:var(--deep-gold);letter-spacing:3.5px;font-weight:700}.main-section-heading{font-family:var(--serif);font-size:clamp(64px,7vw,102px);font-weight:400;line-height:.98;margin:0;color:#49382a}.section-subhead{font-family:var(--sans);color:#c99d41;font-size:12px;letter-spacing:2px;margin:14px 0 0}.reveal{opacity:0;transform:translateY(32px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.75,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}
+/* Cover gate based on the supplied visual reference. Entirely functional doors. */
+.invitation-gate{position:fixed;inset:0;z-index:100;display:flex;overflow:hidden;background:var(--ivory)}.invitation-gate.is-hidden{display:none}.gate-door{position:absolute;top:0;bottom:0;width:50%;background:#f4efe8;overflow:hidden;transition:transform 1.35s cubic-bezier(.75,.03,.22,1);will-change:transform}.gate-door--left{left:0;border-right:1px solid #907149}.gate-door--right{right:0;border-left:1px solid #907149}.gate-door:before,.gate-door:after{content:'';position:absolute;inset:34px 33px 30px;border:1px solid #cfb994;border-radius:3px;pointer-events:none}.gate-door:after{inset:41px 40px 37px;border-color:#e0cfb5}.gate-door--left:before,.gate-door--left:after{right:34px}.gate-door--right:before,.gate-door--right:after{left:34px}.gate-flower{position:absolute;width:min(48%,270px);height:auto;mix-blend-mode:multiply;opacity:.9;pointer-events:none}.gate-flower--tl{top:12px;left:22px;mask-image:radial-gradient(ellipse at 25% 23%,#000 45%,transparent 88%)}.gate-flower--tr{top:12px;right:22px;mask-image:radial-gradient(ellipse at 75% 23%,#000 45%,transparent 88%)}.gate-flower--bl{bottom:2px;left:18px;mask-image:radial-gradient(ellipse at 20% 79%,#000 45%,transparent 90%)}.gate-flower--br{bottom:2px;right:18px;mask-image:radial-gradient(ellipse at 80% 79%,#000 45%,transparent 90%)}
+.gate-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:2;pointer-events:none;transform:translateY(20px);transition:opacity .45s ease,transform .7s ease}.gate-center>*{pointer-events:auto}.gate-diamond{height:132px;width:132px;transform:rotate(45deg);border:1.5px solid #b28c51;outline:7px solid var(--white);background:var(--white);box-shadow:0 0 0 8px #d6bd94,0 8px 22px #5a3d2110;display:grid;place-items:center;margin-bottom:27px}.gate-diamond:before{position:absolute;content:'';inset:7px;border:1px solid #b28c51}.gate-diamond span{display:block;transform:rotate(-45deg);font-family:var(--serif);font-size:52px;color:#9b7441;font-weight:600;white-space:nowrap}.gate-names{font-family:var(--serif);font-size:clamp(30px,3.7vw,48px);font-style:italic;line-height:1.2;letter-spacing:-1px;color:#5a3c2b;margin-top:10px;text-align:center}.gate-names .amp{color:#aa794c}.gate-rule{width:45px;height:1px;background:#b38b53;display:block;margin:8px auto 35px}.open-invitation{border:1px solid #9d7846;background:#fbf9f6;min-width:268px;padding:17px 27px;color:#9a6e3d;letter-spacing:4px;font-size:12px;cursor:pointer;transition:background .3s,color .3s,transform .3s}.open-invitation span{letter-spacing:0;margin-left:14px}.open-invitation:hover{background:#a87c41;color:white;transform:translateY(-2px)}.gate-open .gate-door--left{transform:translateX(-105%)}.gate-open .gate-door--right{transform:translateX(105%)}.gate-open .gate-center{opacity:0;transform:translateY(20px) scale(.96)}
+/* Palace hero */
+.hero{height:100svh;min-height:680px;position:relative;display:flex;align-items:flex-start;justify-content:center;text-align:center;overflow:hidden;background:linear-gradient(180deg,#d8ddea 0%,#f6edf0 38%,#fff0e1 66%,#ead8c7 100%)}.hero-sky{position:absolute;inset:0;background:radial-gradient(ellipse at 10% 65%,#ffe8d7ab 0,transparent 55%),radial-gradient(ellipse at 89% 45%,#f6e2d6a9 0,transparent 40%)}.palace-image{position:absolute;bottom:-4%;left:50%;width:min(100%,920px);height:65%;transform:translateX(-50%);background:url('assets/palace-facade.webp') center bottom/100% 100% no-repeat;opacity:.82;mask-image:linear-gradient(to bottom,transparent 0%,#000 20%,#000 85%,transparent 100%)}.hero-content{position:relative;z-index:1;padding-top:clamp(115px,27vh,330px);width:100%;max-width:700px}.ganesha{width:95px;height:86px;object-fit:contain;margin:0 auto 16px;mix-blend-mode:multiply}.prayer{font-size:11px;letter-spacing:3px;font-weight:700;color:#67523d}.hero-eyebrow{font-family:var(--serif);letter-spacing:3.2px;font-size:13px;margin-top:20px;color:#695342}.tiny-diamond{display:block;font-size:13px;margin:3px auto 12px;color:#93734b}.hero-names{font-family:var(--serif);font-size:clamp(74px,10vw,132px);line-height:.78;letter-spacing:-3px;font-weight:600;color:#4d392b;margin:0;display:flex;flex-direction:column;align-items:center;gap:15px}.hero-amp{font-style:italic;font-size:23px;color:#b99043;letter-spacing:0;line-height:1.2;margin:6px 0}.scroll-down{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:4px;color:#4d3c31;z-index:2}.scroll-down span:first-child{font-size:9px;letter-spacing:2.6px}.down-arrow{font-size:35px;line-height:.65;animation:bob 2s ease-in-out infinite}@keyframes bob{50%{transform:translateY(6px)}}
+/* Meet the couple */
+.meet{position:relative;overflow:hidden;min-height:100svh;display:flex;align-items:center;padding:115px 0 145px}.section-flower{position:absolute;mix-blend-mode:multiply;opacity:.66;width:180px;pointer-events:none}.meet-top-flower{left:0;top:0}.meet-bottom-flower{right:0;bottom:0;transform:rotate(180deg)}.meet-inner{max-width:900px}.meet-heading{text-align:center;margin-bottom:80px}.meet-heading .section-label{margin:0 0 12px}.script-heading{font-family:var(--serif);font-size:clamp(39px,5.5vw,71px);font-style:italic;font-weight:600;margin:0}.gold-flourish{width:70px;height:2px;margin:18px auto 0;background:linear-gradient(to right,transparent,#cba55f,transparent)}.couple-cards{display:flex;flex-direction:column;align-items:center;gap:30px}.person-card{position:relative;background:#ffffffc9;border:1px solid #f1e0c5;border-radius:25px;width:min(100%,680px);min-height:215px;padding:35px 32px 25px;text-align:center;box-shadow:0 15px 36px #9570420c}.person-tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#957043;color:#fff;border-radius:20px;padding:7px 24px;white-space:nowrap;font-size:9px;letter-spacing:1px;font-weight:800}.person-card h3{font-family:var(--serif);font-size:clamp(29px,4vw,43px);font-weight:600;margin:0 0 5px}.parent-text{font-family:var(--sans);font-size:11px;line-height:1.4;font-weight:700;letter-spacing:1px;color:#9c7446;margin:5px 0 15px}.person-card blockquote{max-width:450px;margin:0 auto;font-family:'DM Sans',sans-serif;font-style:italic;font-size:14px;line-height:1.8;font-weight:400;color:#9b7c65}.couple-connector{width:48px;height:48px;border-radius:50%;background:#ab8441;color:#fff;font-family:var(--serif);font-size:31px;font-style:italic;text-align:center;line-height:48px}
+/* Optional new photo section */
+.memories{padding:100px 0 125px;background:linear-gradient(180deg,#faf5ef,#f1e7dc)}.memories .main-section-heading{margin:12px 0}.memories-subhead{font-family:var(--serif);font-style:italic;font-size:24px;color:#937450;margin:5px 0 50px}.photo-gallery{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:1fr 1fr;gap:22px;max-width:970px;margin:0 auto}.photo-frame{margin:0;min-height:240px;border:7px solid #fff9f1;background:#ede1d1;box-shadow:0 14px 35px #6b4a2f20;overflow:hidden;position:relative;border-radius:180px 180px 9px 9px}.photo-frame--main{grid-row:1/3;min-height:630px;border-radius:300px 300px 9px 9px}.photo-frame picture{display:block;position:absolute;inset:0;width:100%;height:100%;overflow:hidden}.photo-frame img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.photo-frame figcaption{position:absolute;z-index:1;bottom:22px;left:10%;right:10%;text-align:center;background:#fff9e9d6;color:#7c5d38;letter-spacing:3px;font-size:10px;padding:11px;border-radius:2px}.small-ornament{margin:55px auto 0;text-align:center;color:#bd9a55;font-size:35px}
+/* Countdown */
+.countdown{position:relative;overflow:hidden;padding:120px 0 160px;min-height:920px;background:linear-gradient(180deg,#fbf3f1,#fcf0e8)}.faded-palace{position:absolute;inset:30% 0 0;background:url('assets/palace-facade.webp') center bottom /min(900px,100%) auto no-repeat;opacity:.23;mask-image:linear-gradient(to bottom,transparent,#000 45%,#000 82%,transparent)}.countdown-inner{max-width:750px;text-align:center}.countdown-title{font-family:var(--serif);font-weight:400;color:#503b2e;font-size:clamp(66px,7vw,100px);line-height:.93;margin:0}.countdown-caption{font-size:12px;letter-spacing:1.8px;color:#7e6959;margin-top:20px}.hairline{width:98px;height:1px;background:#d5b570;margin:14px auto 65px}.countdown-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;width:min(100%,650px);margin:0 auto}.count-tile{position:relative;aspect-ratio:1.12;min-height:180px;border:1px solid #ba8e35;overflow:hidden;border-radius:16px;background:linear-gradient(140deg,#d2a549,#fae09b 49%,#bf933b);box-shadow:inset 0 0 22px #fff2b552;cursor:pointer;color:white;perspective:800px}.count-tile:before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.14;background:repeating-linear-gradient(45deg,transparent 0 17px,#fff 17px 34px),repeating-linear-gradient(-45deg,transparent 0 17px,#966e2c 17px 34px)}.tile-face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;backface-visibility:hidden;transition:transform .65s,opacity .55s;gap:10px;letter-spacing:5px;font-size:13px;font-weight:700}.tile-star{width:58px;height:58px;border:1px solid #ffffff99;border-radius:50%;display:grid;place-items:center;font-size:36px;letter-spacing:0;color:#fff}.tile-number{opacity:0;transform:rotateY(180deg);letter-spacing:1px}.tile-number strong{font-family:var(--serif);font-size:clamp(64px,8vw,95px);line-height:1;font-weight:600}.tile-number small{font-size:11px;letter-spacing:4px}.count-tile.flipped .tile-cover{opacity:0;transform:rotateY(-180deg)}.count-tile.flipped .tile-number{opacity:1;transform:rotateY(0)}.count-tile:hover{filter:brightness(1.045)}.countdown-hint{margin:20px 0 0;font-size:11px;letter-spacing:1px;color:#9b8267}
+/* Elegant event cards */
+.events{padding:90px 0 150px;background:linear-gradient(180deg,#fff7f3 0%,#f8eee7 100%)}.events .section-subhead{margin-bottom:95px}.event-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;align-items:stretch}.event-card{position:relative;background:#fffdfbd9;border-radius:15px;border:1px solid #f4dfba;padding:12px;box-shadow:0 13px 33px #7f59301c}.event-card-inner{border:1px solid #e5c794;height:100%;padding:55px 18px 35px;text-align:center;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:625px}.event-card-inner:before,.event-card-inner:after,.decorative-frame:before,.decorative-frame:after{content:'';position:absolute;pointer-events:none;width:42px;height:42px;border-color:#c49a4a;border-style:solid;opacity:.8}.event-card-inner:before,.decorative-frame:before{top:12px;left:12px;border-width:2px 0 0 2px}.event-card-inner:after,.decorative-frame:after{bottom:12px;right:12px;border-width:0 2px 2px 0}.event-flower{width:74px;height:64px;object-fit:contain;mix-blend-mode:multiply;margin-bottom:5px}.join-us{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:15px}.event-card h3{font-family:var(--serif);font-size:clamp(45px,4vw,63px);font-weight:600;line-height:.9;margin:22px 0 21px;min-height:105px;display:flex;align-items:center;justify-content:center}.event-rule{width:50px;height:1px;background:#dfc089;margin-bottom:23px}.event-date{font-size:12px;color:#564231;font-weight:800;letter-spacing:3px;margin:0}.event-time{font-size:19px;font-family:var(--serif);font-style:italic;color:#c4973d;margin:18px 0}.event-quote{font-family:var(--serif);font-style:italic;font-size:clamp(23px,2.3vw,32px);line-height:1.25;min-height:115px;max-width:300px;margin:14px auto 25px}.venue-label{font-size:10px;letter-spacing:3.2px;color:#c49a4d;margin:0 0 12px}.event-location{font-size:20px;line-height:1.2;font-family:var(--serif);margin:0 0 24px}.pill-button,.outline-button{display:inline-block;border-radius:28px;background:#c49b3e;color:white;padding:13px 30px;font-size:11px;letter-spacing:2.5px;font-weight:600;border:1px solid #c49b3e;cursor:pointer;box-shadow:0 9px 14px #8b693328;transition:transform .2s,background .2s}.pill-button:hover,.outline-button:hover{transform:translateY(-2px);background:#a67e2f}.outline-button{background:transparent;color:#b48a36;box-shadow:none}.outline-button:hover{color:white}
+/* Venue */
+.venue{position:relative;overflow:hidden;padding:115px 0 120px;background:linear-gradient(180deg,#f5ebe6,#f9f0eb)}.venue-bg{position:absolute;inset:0;background:linear-gradient(180deg,#f9f2eddb,#f9f2ede6),url('assets/palace-facade.webp') center/cover no-repeat;opacity:.35;filter:sepia(.2)}.venue .section-subhead{margin-bottom:65px}.venue-grid{display:grid;grid-template-columns:minmax(260px,.78fr) minmax(360px,1.4fr);gap:25px;max-width:1080px;margin:auto}.decorative-frame{position:relative;border-radius:14px;border:1px solid #e9cd98;background:#fffcf9e8;box-shadow:0 15px 32px #8d6a3b1b;padding:18px}.venue-address{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:500px;padding:55px}.venue-eyebrow{letter-spacing:3px;font-size:12px;line-height:1.6;color:#c29a40;display:flex;align-items:center;gap:12px;margin-bottom:20px}.venue-pin{font-size:29px;border:1px solid #f0d9a9;border-radius:50%;padding:0 9px}.venue-address h3{font-family:var(--serif);font-size:clamp(43px,5vw,71px);line-height:.9;font-weight:600;margin:18px 0 26px}.venue-address address{font-family:var(--serif);font-style:italic;font-size:clamp(24px,2.5vw,32px);line-height:1.35}.venue-buttons{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:35px}.venue-buttons .pill-button{border-radius:12px}.venue-buttons .outline-button{border-radius:12px}.venue-map{position:relative;padding:12px;min-height:520px}.venue-map iframe{width:100%;height:100%;border:0;border-radius:8px;min-height:480px;background:#e4e7dd}.map-open{position:absolute;top:32px;left:32px;font-size:12px;font-family:Arial,sans-serif;color:#2566bf;background:#fff;padding:10px 14px;box-shadow:0 2px 8px #0002;border-radius:4px}
+/* Thank you */
+.thanks{min-height:680px;background:#1c385b;color:white;position:relative;display:grid;place-items:center;text-align:center;overflow:hidden;padding:85px 20px}.thanks-palace{position:absolute;inset:0;background:url('assets/palace-facade.webp') center bottom/cover no-repeat;opacity:.075;filter:grayscale(1)}.thanks:before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 55%,#45608844,transparent 70%)}.thanks-content{position:relative;z-index:2;max-width:800px}.footer-monogram{border:1px solid #c29d60;border-radius:50%;width:135px;height:135px;display:grid;place-items:center;font-family:var(--serif);font-size:52px;color:#e9b866;margin:0 auto 55px;outline:1px solid #bf9654;outline-offset:8px}.thanks h2{font-family:var(--serif);font-size:clamp(76px,10vw,135px);line-height:1;margin:0 0 24px}.thanks-rule{display:flex;align-items:center;gap:19px;justify-content:center;font-size:25px}.thanks-rule:before,.thanks-rule:after{content:'';width:90px;height:1px;background:#c1a57161}.thanks-quote{font-family:var(--serif);font-size:clamp(28px,3.4vw,42px);line-height:1.3;font-style:italic;margin:60px 0 70px}.thanks-wish{font-family:var(--serif);font-style:italic;font-size:23px;color:#eac087}.tiny-hearts{color:#df9b93;font-size:12px;letter-spacing:15px;margin-top:23px}
+/* Utility controls */
+.return-to-cover{position:fixed;top:17px;left:17px;z-index:30;background:#802042;color:#fff;border:2px solid #cea645;border-radius:30px;padding:10px 20px;cursor:pointer;font-family:var(--sans);font-size:12px;font-weight:700;box-shadow:0 5px 13px #0002;transition:transform .2s}.return-to-cover:hover{transform:translateY(-2px)}body.gate-closed .return-to-cover{display:none}.music-toggle{position:fixed;right:18px;bottom:25px;z-index:20;border:1px solid #caa24f;border-radius:50%;width:48px;height:48px;background:#fffaf1;color:#9a6b3d;cursor:pointer;font-size:23px;box-shadow:0 7px 18px #0002}.music-toggle[hidden]{display:none}.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);z-index:200;background:#563f2e;color:white;border-radius:20px;padding:10px 17px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .3s}.toast.is-visible{opacity:1}
+@media (min-width:1300px){.gate-flower{width:min(42%,350px)}.hero-content{padding-top:20vh}.palace-image{width:min(85%,1100px);height:75%}.hero-names{font-size:112px}.hero{min-height:800px}}
+@media (max-width:980px){.event-list{grid-template-columns:1fr;max-width:550px;margin:auto;gap:45px}.event-card-inner{min-height:690px;padding:65px 30px}.event-card h3{min-height:unset;font-size:69px;max-width:360px}.event-quote{min-height:unset;font-size:34px;max-width:370px}.venue-grid{grid-template-columns:1fr}.venue-map{height:450px;min-height:450px}.venue-map iframe{min-height:425px}.venue-address{min-height:unset}}
+@media (max-width:600px){
+ .section-inner{width:min(100% - 36px,550px)}.gate-door:before{inset:16px 13px}.gate-door:after{inset:21px 18px}.gate-door--left:before,.gate-door--left:after{right:10px}.gate-door--right:before,.gate-door--right:after{left:10px}.gate-flower{width:145px;max-width:90%}.gate-flower--tl{left:-6px;top:17px}.gate-flower--tr{right:-4px;top:17px}.gate-flower--bl{left:-8px;bottom:12px}.gate-flower--br{right:-8px;bottom:12px}.gate-diamond{width:95px;height:95px;margin-bottom:22px;outline-width:5px;box-shadow:0 0 0 6px #d6bd94}.gate-diamond span{font-size:39px}.gate-names{font-size:35px;margin-top:10px}.gate-rule{margin:9px auto 28px}.open-invitation{min-width:232px;font-size:11px;padding:17px 15px;letter-spacing:2.8px}
+ .hero{min-height:680px}.hero-content{padding-top:clamp(145px,25vh,300px)}.ganesha{height:78px;width:85px;margin-bottom:14px}.hero-eyebrow{font-size:11px}.hero-names{font-size:clamp(72px,19vw,104px);gap:20px}.palace-image{height:46%;width:100%;bottom:2%}.prayer{font-size:10px}.scroll-down{bottom:23px}
+ .meet{padding:160px 0 145px;min-height:940px}.meet-heading{margin-bottom:90px}.script-heading{font-size:clamp(38px,9.6vw,52px)}.meet-top-flower,.meet-bottom-flower{width:132px}.person-card{min-height:215px;padding:38px 23px 25px}.person-card h3{font-size:34px}.parent-text{font-size:11px;letter-spacing:.6px}.person-card blockquote{font-size:14px}.couple-cards{gap:21px}.couple-connector{width:49px;height:49px;line-height:49px}
+ .memories{padding:105px 0 100px}.memories .main-section-heading{font-size:76px}.memories-subhead{font-size:21px}.photo-gallery{grid-template-columns:1fr 1fr;gap:12px;grid-template-rows:auto auto}.photo-frame{min-height:230px;border-width:4px;border-radius:90px 90px 7px 7px}.photo-frame--main{grid-column:1/3;grid-row:auto;min-height:475px;border-radius:220px 220px 8px 8px}.photo-frame figcaption{font-size:9px;bottom:15px}
+ .countdown{padding:110px 0 130px;min-height:780px}.countdown-title{font-size:clamp(57px,12vw,78px)}.hairline{margin-bottom:60px}.countdown-grid{gap:17px}.count-tile{min-height:145px;aspect-ratio:1.02;border-radius:14px}.tile-face{font-size:10px;letter-spacing:4px}.tile-star{height:46px;width:46px;font-size:27px}.tile-number strong{font-size:64px}.tile-number small{font-size:9px}.countdown-hint{font-size:10px}
+ .events{padding:115px 0 130px}.events .section-subhead{margin-bottom:100px}.main-section-heading{font-size:79px}.event-list{gap:45px}.event-card{padding:8px}.event-card-inner{min-height:710px;padding:67px 17px 45px}.event-card h3{font-size:60px}.event-quote{font-size:31px}.event-location{font-size:21px}.event-date{font-size:12px}.event-time{font-size:20px}
+ .venue{padding:110px 0 100px}.venue-heading{font-size:clamp(59px,13vw,78px)}.venue .section-subhead{margin-bottom:58px}.venue-grid{gap:20px}.venue-address{align-items:center;text-align:center;padding:48px 27px}.venue-address h3{font-size:56px}.venue-address address{font-size:28px}.venue-buttons{justify-content:center}.venue-map{min-height:400px;height:400px}.venue-map iframe{min-height:375px}.map-open{top:26px;left:26px}
+ .thanks{min-height:670px;padding:90px 22px}.footer-monogram{width:112px;height:112px;font-size:42px}.thanks h2{font-size:80px}.thanks-quote{font-size:30px;margin:55px 0 70px}.thanks-wish{font-size:20px}.return-to-cover{padding:9px 16px;top:13px;left:15px}
+}
+@media(max-width:360px){.hero-names{font-size:69px}.gate-names{font-size:30px}.tile-face{letter-spacing:2px}.countdown-grid{gap:10px}.event-card h3{font-size:51px}.event-quote{font-size:26px}.venue-address h3{font-size:49px}.main-section-heading{font-size:63px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+
+/* ===== Original stylesheet: refined.css ===== */
+/* ================================================================
+   THE ROYAL WEDDING — REFINED ORIGINAL ART EDITION
+   Every image referenced below was freshly generated for this project.
+   There are no image crops from the reference invitation screenshots.
+   ================================================================ */
+:root {
+  --paper:#faf5ee; --ivory:#f8f2eb; --white:#fffaf5;
+  --brown:#4b3528; --text:#503b2e; --gold:#c4a064;
+  --deep-gold:#8f6a40; --line:#dac4a5; --navy:#1d385d;
+  --wine:#812f48;
+}
+html { scroll-padding-top: 30px; }
+body { background:var(--paper); color:var(--text); }
+.section-cream { background-color:var(--paper); }
+.section-label { color:#977246; }
+.main-section-heading { letter-spacing:-.03em; }
+.reveal { transition-duration: 1s; }
+
+/* Soft, original gate flowers; the left/right panels use opposite
+   halves of our newly generated transparent corner-frame illustration. */
+.invitation-gate { background:#f9f4ee; }
+.gate-door {
+  background-image:linear-gradient(110deg,rgba(255,254,251,.72),rgba(239,231,221,.5)),url('assets/floral-corners.webp');
+  background-repeat:no-repeat,no-repeat;
+  background-size:100% 100%,200% 100%;
+  box-shadow:inset 0 0 100px #7f5b2c06;
+}
+.gate-door--left { background-position:center,left center; border-right:1.5px solid #a47e51; }
+.gate-door--right { background-position:center,right center; border-left:1.5px solid #a47e51; }
+.gate-door:before { border-color:#d0bb9d; }
+.gate-door:after { border-color:#e5d7c5; }
+.gate-center { filter:drop-shadow(0 5px 16px #71492818); }
+.gate-diamond {
+  background:#fdf9f3;
+  border-color:#a17d4a;
+  box-shadow:0 0 0 8px #d9c4a6,0 9px 32px #8267411b;
+}
+.gate-names { color:#634532; text-shadow:0 2px 12px #fff8f2; }
+.open-invitation {
+  border:1px solid #b19163;
+  background:rgba(255,251,246,.92);
+  box-shadow:0 12px 28px #a5845317;
+  transition:transform .25s,background .25s,color .25s,box-shadow .25s;
+}
+.open-invitation:hover { box-shadow:0 15px 30px #8a653327; }
+
+/* Palace welcome — using generated original ivory palace illustration */
+.hero {
+  background:linear-gradient(180deg,#e1e6ec 0%,#f1e9e9 33%,#fbeee4 67%,#f7e3d4 100%);
+  isolation:isolate;
+}
+.hero-sky {
+  background:
+    radial-gradient(ellipse at 13% 68%,#fff1e0b2 0%,transparent 50%),
+    radial-gradient(ellipse at 90% 51%,#ffe4d7ad 0%,transparent 49%),
+    radial-gradient(ellipse at 44% 20%,#ffffff55 0%,transparent 67%);
+}
+.palace-image {
+  width:min(100%,1160px); height:72%; bottom:-8%;
+  background:url('assets/palace-facade.webp') center bottom/contain no-repeat;
+  opacity:.88;
+  mask-image:linear-gradient(180deg,transparent 0%,#000 10%,#000 86%,transparent 100%);
+  pointer-events:none;
+}
+.hero-content { padding-top:clamp(98px,18vh,235px); }
+.ganesha { width:102px; height:105px; margin-bottom:15px; mix-blend-mode:normal; opacity:.92; }
+.hero-names { font-size:clamp(78px,9vw,122px); text-shadow:0 3px 18px #fff6efa6; }
+.hero-amp { font-size:22px; }
+.prayer { color:#6a594b; }
+.hero-eyebrow { color:#7d624b; }
+.scroll-down { bottom:31px; text-shadow:0 1px 8px #fff5eb; }
+
+/* The couple: pale original watercolor architecture at the corners. */
+.meet { isolation:isolate; background:linear-gradient(180deg,#fbf7f1 0%,#faf4ed 100%); }
+.meet:before {
+  content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
+  background:url('assets/floral-corners.webp') center center/100% 100% no-repeat;
+  opacity:.62;
+}
+.meet-inner { position:relative; z-index:1; }
+.meet-heading { margin-bottom:76px; }
+.script-heading { color:#5c3d31; }
+.person-card {
+  background:rgba(255,255,255,.69);
+  border:1px solid #ecd9bf;
+  box-shadow:0 16px 50px #80613f0d;
+  backdrop-filter:blur(2px);
+}
+.person-tag { background:#997449; }
+.couple-connector { background:linear-gradient(130deg,#ad874f,#cba868); box-shadow:0 7px 19px #80613f1a; }
+
+/* Original photo placement is deliberately left editable. */
+.memories {
+  position:relative; isolation:isolate; overflow:hidden;
+  background:linear-gradient(180deg,#f9f2e9,#f3e8dc);
+}
+.memories:before {
+  content:"";position:absolute;inset:5% 0 0;
+  background:url('assets/palace-skyline.webp') center bottom/ min(950px,130%) auto no-repeat;
+  opacity:.17;z-index:0;pointer-events:none;
+}
+.memories .section-inner { z-index:1; }
+.photo-frame {
+  border-color:#fffcf5;
+  outline:1px solid #dac49e;
+  outline-offset:4px;
+  background:#edddc9;
+  box-shadow:0 17px 42px #634a3023;
+}
+.photo-frame img { transition:transform .9s cubic-bezier(.2,.8,.2,1); }
+.photo-frame:hover img { transform:scale(1.045); }
+.photo-frame figcaption { letter-spacing:2px; }
+
+/* Four interactive gold countdown tiles over the original skyline. */
+.countdown {
+  background:linear-gradient(180deg,#faf2ed 0%,#f8eee8 55%,#f9eee5 100%);
+  isolation:isolate;
+}
+.faded-palace {
+  inset:18% 0 0;
+  background:url('assets/palace-skyline.webp') center bottom/min(1080px,125%) auto no-repeat;
+  opacity:.38;
+  mask-image:linear-gradient(to bottom,transparent 4%,#000 36%,#000 80%,transparent 100%);
+  pointer-events:none;
+}
+.countdown-inner { position:relative; z-index:1; }
+.countdown-title { color:#4b382e; letter-spacing:-.04em; }
+.count-tile {
+  border:1px solid #c19a53;
+  box-shadow:inset 0 2px 18px #fff9dc7d,0 10px 25px #ad8d5c1f;
+  background:linear-gradient(137deg,#cca454 0%,#f5d996 50%,#c49a4d 100%);
+}
+.count-tile:hover { box-shadow:inset 0 2px 20px #fff9dcb5,0 17px 31px #a8844731; }
+
+/* Cards have genuine HTML text and map links. */
+.events {
+  position:relative;isolation:isolate;overflow:hidden;
+  background:linear-gradient(180deg,#fcf2eb,#f8eee7);
+}
+.events:before {
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:url('assets/floral-corners.webp') center center/100% 100% no-repeat;
+  opacity:.38;
+}
+.events .section-inner { position:relative;z-index:1; }
+.event-card { background:#fff9f1dd; border-color:#eddac0; box-shadow:0 15px 45px #896b4116; }
+.event-card-inner { background:rgba(255,255,255,.54);border-color:#d9b980; }
+.event-flower { mix-blend-mode:normal;width:77px;height:77px; }
+.event-card h3 { color:#4b372b; }
+.event-quote { color:#624435; }
+.pill-button { background:#c39d53; border-color:#c39d53; }
+
+/* Background is a transparent, freshly generated royal courtyard. */
+.venue {
+  isolation:isolate; background:linear-gradient(180deg,#f8eee8,#f6ebe4);
+}
+.venue-bg {
+  background:url('assets/royal-courtyard.webp') center center/cover no-repeat;
+  opacity:.19;filter:none;
+}
+.venue-address,.venue-map {
+  background:rgba(255,252,248,.85);
+  backdrop-filter:blur(3px);
+  border-color:#e0cda9;
+}
+.venue-address h3 { color:#563f2e; }
+.venue-map iframe { background:#f4ece1; }
+
+/* Deep imperial-blue finish with the pale new heritage skyline. */
+.thanks { background:#1e395c; isolation:isolate; }
+.thanks-palace {
+  background:url('assets/palace-skyline.webp') center bottom /min(1150px,125%) auto no-repeat;
+  opacity:.18;
+  filter:none;
+  /* Soften the skyline edges into the solid blue background instead of ending abruptly. */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0,0,0,.22) 6%,
+    rgba(0,0,0,.75) 12%,
+    #000 20%,
+    #000 80%,
+    rgba(0,0,0,.75) 88%,
+    rgba(0,0,0,.22) 94%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0,0,0,.22) 6%,
+    rgba(0,0,0,.75) 12%,
+    #000 20%,
+    #000 80%,
+    rgba(0,0,0,.75) 88%,
+    rgba(0,0,0,.22) 94%,
+    transparent 100%
+  );
+}
+.thanks:before {
+  background:radial-gradient(ellipse at 50% 51%,#52739a1f,transparent 78%);
+}
+.footer-monogram { color:#dbb977; border-color:#b59b6c; }
+.thanks h2 { text-shadow:0 3px 32px #081d3040; }
+.thanks-quote { color:#fff8f2; }
+.thanks-wish { color:#dfbe88; }
+
+/* Invitation navigation and a subtle progress indication. */
+.return-to-cover {
+  top:16px;left:16px;padding:10px 18px;
+  background:#762d49;border:1px solid #c6a263;
+  box-shadow:0 6px 22px #4833292a;
+}
+.quick-links { position:fixed;z-index:30;right:17px;top:16px;font-family:var(--sans); }
+.quick-links[hidden] { display:none !important; }
+body.gate-closed .quick-links { display:none; }
+.quick-links-toggle {
+  background:#fffaf2e9;border:1px solid #c9ac7b;color:#7a553d;
+  padding:10px 15px;border-radius:30px;cursor:pointer;font-weight:700;
+  font-size:12px;box-shadow:0 6px 22px #4d32252b;
+}
+.quick-links-toggle span { margin-left:5px; }
+.quick-links-menu {
+  position:absolute;top:calc(100% + 10px);right:0;
+  min-width:180px;background:#fff9f1f5;border:1px solid #dcc49a;
+  box-shadow:0 14px 38px #4f362333; border-radius:13px;
+  padding:8px;backdrop-filter:blur(12px);
+}
+.quick-links-menu[hidden] { display:none; }
+.quick-links-menu a {
+  display:block;border-radius:7px;padding:11px 13px;
+  font-size:12px;font-weight:600;color:#614934;
+}
+.quick-links-menu a:hover,.quick-links-menu a:focus { background:#f0e0c8; }
+.scroll-progress { position:fixed;z-index:120;top:0;left:0;width:0;height:3px;background:#b89152;pointer-events:none;transition:width .08s; }
+.music-toggle { background:#fdf8f1;border-color:#c39b62;color:#916438; }
+
+@media (min-width: 1100px) {
+  .hero-content { padding-top:clamp(90px,12vh,180px); }
+  .palace-image { width:min(95%,1180px);height:79%;bottom:-13%; }
+  .meet { min-height:850px; }
+  .event-card { transition:transform .35s ease, box-shadow .35s ease; }
+  .event-card:hover { transform:translateY(-5px);box-shadow:0 22px 55px #80603a29; }
+}
+@media (max-width: 980px) {
+  .hero-content { padding-top:clamp(120px,19vh,240px); }
+  .palace-image { width:115%;height:63%;bottom:-6%; }
+  .venue-bg { background-size:auto 100%; }
+}
+@media (max-width: 600px) {
+  .invitation-gate .gate-door {
+    background-image:linear-gradient(110deg,rgba(255,254,251,.65),rgba(242,233,225,.55)),url('assets/floral-corners.webp');
+    background-size:100% 100%,200% 100%;
+  }
+  .gate-door:before { inset:22px 14px 23px; }
+  .gate-door:after { inset:27px 19px 29px; }
+  .gate-center { transform:translateY(12px); }
+  .gate-diamond { width:101px;height:101px; }
+  .gate-names { font-size:clamp(31px,8.8vw,39px); }
+  .hero { min-height:730px; }
+  .hero-content { padding-top:clamp(136px,22vh,275px); }
+  .palace-image { width:130%;height:52%;bottom:-3%;opacity:.88; }
+  .hero-names { font-size:clamp(74px,18vw,97px);gap:8px; }
+  .ganesha { width:85px;height:90px; }
+  .meet { padding:150px 0 155px; }
+  .meet:before { background-size:100% 100%;opacity:.7; }
+  .meet-heading { margin-bottom:80px; }
+  .countdown { min-height:835px; }
+  .faded-palace { background-size:125% auto;background-position:center 65%;opacity:.35; }
+  .events:before { background-size:110% 65%;background-repeat:repeat-y;opacity:.28; }
+  .venue-bg { background-size:auto 100%; opacity:.13; }
+  .thanks-palace { background-size:135% auto;opacity:.18; }
+  .quick-links-toggle { padding:9px 11px;font-size:12px; }
+  .quick-links-toggle span { display:none; }
+  .quick-links-menu { min-width:178px; }
+  .return-to-cover { padding:9px 13px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .photo-frame img { transition:none; }
+  .event-card { transition:none; }
+}
+
+
+/* ===== Original stylesheet: scroll-transition.css ===== */
+/* ===============================================================
+   SCROLL STORYTELLING / HERO -> COUPLE
+   Based on successive scroll states supplied for visual direction.
+   The page below is real HTML and slides over a sticky palace scene;
+   the welcome lettering moves upward and gradually disappears.
+   CSS fallback is usable without JS; JS only adds scroll progress.
+   =============================================================== */
+
+/* The hero's scroll runway must be a FULL second viewport: the palace
+   remains pinned until the opaque couple page has travelled from bottom
+   to TOP of the screen. A 140svh parent unpinned the palace after only
+   40% of the journey, causing the user's reported premature reveal. */
+.hero {
+  display:block;
+  height:200svh;
+  min-height:0;
+  overflow:clip;
+  isolation:auto;
+  background:transparent;
+  position:relative;
+  z-index:1;
+}
+.hero-stage {
+  position:sticky;
+  top:0;
+  height:100svh;
+  min-height:0;
+  width:100%;
+  overflow:hidden;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  text-align:center;
+  background:linear-gradient(180deg,#e1e6ec 0%,#f1e9e9 33%,#fbeee4 67%,#f7e3d4 100%);
+  isolation:isolate;
+}
+/* Tiny visual parallax under the independent upward travel of type. */
+.hero-stage .palace-image {
+  transform:translate3d(-50%, var(--palace-shift, 0px), 0) scale(var(--palace-scale, 1));
+  transform-origin:50% 85%;
+  will-change:transform;
+}
+.hero-stage .hero-content {
+  transform:translate3d(0, var(--welcome-shift, 0px), 0);
+  opacity:var(--welcome-opacity, 1);
+  will-change:transform,opacity;
+  pointer-events:var(--welcome-interaction, auto);
+}
+.hero-stage .scroll-down {
+  opacity:var(--scroll-prompt-opacity, 1);
+  pointer-events:var(--scroll-prompt-interaction, auto);
+}
+/* Opaque cream paper rises over the still-pinned palace all the way to
+   the top; the panel never becomes translucent or leaves gaps. */
+.meet {
+  position:relative;
+  z-index:3;
+  margin-top:-100svh;
+  box-shadow:0 -18px 45px -42px rgba(112,78,48,.20);
+  background-color:#fbf7f1;
+}
+.meet::after {
+  content:'';
+  position:absolute;
+  z-index:0;
+  top:0;left:0;right:0;
+  height:36px;
+  pointer-events:none;
+  background:linear-gradient(180deg,rgba(251,247,241,.94),rgba(251,247,241,0));
+}
+/* Slight stagger as cards appear after the paper passes into view. */
+.meet .meet-heading.reveal { transition-duration:1.05s; }
+.meet .person-card.reveal { transition-duration:1.05s; }
+
+@media (max-width:600px) {
+  .hero { height:200svh; min-height:0; }
+  .hero-stage { height:100svh; min-height:0; }
+  .meet { margin-top:-100svh; }
+}
+/* Respect motion preferences: the composition remains readable, but
+   parallax and text-fading are turned off. */
+@media (prefers-reduced-motion:reduce) {
+  .hero-stage .hero-content { transform:none!important;opacity:1!important; }
+  .hero-stage .palace-image {transform:translateX(-50%)!important;}
+  .hero-stage .scroll-down { opacity:1!important; }
+  .hero-stage .hero-content,.hero-stage .palace-image { will-change:auto; }
+}
+
+/* Sou(r)av and Malika's personalized event details and both venues. */
+.event-card--long-title h3 { font-size:clamp(34px,3.1vw,46px); line-height:1.03; overflow-wrap:break-word; min-height:112px; }
+.event-venue-pending { color:#9a7857; font:italic 19px var(--serif); margin:12px 0 0; }
+.venue-tabs { display:flex; justify-content:center; flex-wrap:wrap; gap:12px; margin:-20px auto 32px; position:relative; z-index:1; }
+.venue-tab { border:1px solid #c6a66e; border-radius:50px; padding:14px 24px; background:#fffbf5e8; color:#6d5239; font:600 12px var(--sans); letter-spacing:1px; cursor:pointer; transition:background .2s, color .2s, transform .2s; }
+.venue-tab:hover { transform:translateY(-2px); }
+.venue-tab.is-selected { background:#b8904e; color:#fff; border-color:#b8904e; box-shadow:0 6px 14px #89622b30; }
+.venue-tab:focus-visible { outline:3px solid #6d5239; outline-offset:3px; }
+.venue-note { font:italic 17px/1.5 var(--serif); color:#8a725c; margin-top:23px; }
+.venue-address h3 { overflow-wrap:anywhere; }
+@media(max-width:980px){.event-card--long-title h3 { font-size:clamp(42px,8vw,55px); }}
+@media(max-width:600px){.event-card--long-title h3 {font-size:clamp(34px,8vw,43px);min-height:0;} .venue-tabs{flex-direction:column;align-items:stretch;} .venue-tab{width:100%;} .venue-note{font-size:17px;} }
+
+
+/* ===== Original stylesheet: cover-zoom.css ===== */
+/* Cover page only: the monogram, names and invitation button arrive
+   together from the precise center; the original floral doors do not move. */
+.gate-intro {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  transform-origin:center center;
+  opacity:1;
+  transform:scale(1);
+}
+.gate-intro.is-animating {
+  animation:cover-center-zoom 2s cubic-bezier(.19,1,.22,1) both;
+}
+@keyframes cover-center-zoom {
+  0%   { opacity:0; transform:scale(.07); }
+  13%  { opacity:.38; }
+  32%  { opacity:1; }
+  100% { opacity:1; transform:scale(1); }
+}
+@media (prefers-reduced-motion:reduce) {
+  .gate-intro.is-animating { animation:none; }
+}
+
+
+/* ===== Original stylesheet: cover-page-refine.css ===== */
+/* Cover-page refinement overrides requested by user */
+
+/* Match the reference typography more closely */
+.gate-diamond span{
+  font-family:'Cormorant Garamond', Georgia, serif;
+  font-weight:600;
+  font-style:normal;
+  font-size:58px;
+  letter-spacing:-0.5px;
+  color:#9a7341;
+}
+.gate-names{
+  font-family:'Cormorant Garamond', Georgia, serif;
+  font-style:italic;
+  font-weight:600;
+  font-size:clamp(32px,3.9vw,50px);
+  line-height:1.08;
+  letter-spacing:-0.6px;
+  color:#684635;
+}
+.gate-names .amp{
+  color:#8f6b49;
+  font-style:italic;
+}
+.open-invitation{
+  font-family:'Montserrat','DM Sans',Arial,sans-serif;
+  font-weight:400;
+  text-transform:uppercase;
+  letter-spacing:.42em;
+  font-size:12px;
+  color:#9d7747;
+}
+.open-invitation span{
+  display:none;
+}
+
+/* Keep only two border lines in the monogram diamond */
+.gate-diamond{
+  border:1.5px solid #b28c51;
+  outline:none;
+  box-shadow:0 10px 24px rgba(90,61,33,.09);
+  background:#fffdfa;
+}
+.gate-diamond:before{
+  inset:8px;
+  border:1.25px solid #c3a16b;
+}
+
+/* Make the door border lines uniform on all four sides */
+.gate-door:before{
+  inset:34px;
+  border:1px solid #cfb994;
+}
+.gate-door:after{
+  inset:41px;
+  border:1px solid #e0cfb5;
+}
+.gate-door--left:before,
+.gate-door--left:after,
+.gate-door--right:before,
+.gate-door--right:after{
+  left:auto;
+  right:auto;
+}
+
+/* Prevent floral silhouettes from stretching on wide screens */
+.gate-door{
+  background-size:100% 100%, auto 100%;
+  background-repeat:no-repeat, no-repeat;
+}
+.gate-door--left{
+  background-position:center, left center;
+}
+.gate-door--right{
+  background-position:center, right center;
+}
+
+/* Also keep section corner artwork from stretching on wider screens */
+.meet:before,
+.events:before{
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+@media (max-width:600px){
+  .gate-diamond span{font-size:43px;}
+  .gate-diamond:before{inset:6px;}
+  .open-invitation{letter-spacing:.32em;font-size:11px;}
+  .gate-door:before{inset:16px;}
+  .gate-door:after{inset:22px;}
+  .gate-door--left:before,
+  .gate-door--left:after,
+  .gate-door--right:before,
+  .gate-door--right:after{left:auto;right:auto;}
+  .gate-door{background-size:100% 100%, auto 100%;}
+}
+
+
+/* ===== Original stylesheet: hero-open-animations.css ===== */
+/* Wedding hero reveal: start AFTER opening doors, then gentle long-term floating. */
+/* During gate closed: keep the welcome behind the doors visually quiet. */
+.hero-stage .hero-sky,
+.hero-stage .palace-image,
+.hero-stage .scroll-down { opacity:0; }
+
+.hero-stage .hero-content .intro-piece {
+  opacity:0;
+  transform:translate3d(0,22px,0);
+  filter:blur(1.4px);
+}
+.hero-stage .hero-content .intro-groom,
+.hero-stage .hero-content .intro-bride { transform:translate3d(0,38px,0) scale(.985); }
+.hero-stage .hero-content .intro-amp { transform:translate3d(0,28px,0) scale(.96); }
+
+/* Independent containers ensure perpetual float doesn't override fade keyframes. */
+.hero-stage .idol-float,
+.hero-stage .prayer-float { display:block; will-change:transform; }
+.hero-stage .idol-float { width:max-content; margin:0 auto; position:relative; padding:12px; }
+.hero-stage .idol-float::before,
+.hero-stage .idol-float::after { content:''; position:absolute; left:50%; top:50%; border-radius:50%; transform:translate(-50%,-50%); pointer-events:none; }
+.hero-stage .idol-float::before { width:108px; height:108px; border:1.5px solid rgba(202,157,78,.62); }
+.hero-stage .idol-float::after { width:118px; height:118px; border:1px solid rgba(202,157,78,.42); }
+.hero-stage .idol-float .ganesha { display:block; margin:0; width:90px; height:91px; object-fit:contain; opacity:0; position:relative; z-index:1; }
+.hero-stage .prayer-float { margin-top:13px; }
+.hero-stage .prayer-float .prayer { margin:0; }
+
+.hero-stage.hero-sequence-active .hero-sky {
+  animation:heroSkyIn 1.55s ease-out both 0s;
+}
+.hero-stage.hero-sequence-active .palace-image {
+  animation:heroPalaceIn 1.75s ease-out both .08s;
+}
+.hero-stage.hero-sequence-active .intro-ganesha {
+  animation:heroElementIn 1.08s cubic-bezier(.22,.71,.24,1) both .35s;
+}
+.hero-stage.hero-sequence-active .intro-prayer {
+  animation:heroElementIn 1.12s cubic-bezier(.22,.71,.24,1) both .62s;
+}
+.hero-stage.hero-sequence-active .idol-float {
+  animation:gentleHeroFloat 4.2s ease-in-out 2.15s infinite;
+}
+.hero-stage.hero-sequence-active .prayer-float {
+  animation:gentleHeroFloat 4.2s ease-in-out 2.15s infinite;
+}
+.hero-stage.hero-sequence-active .intro-eyebrow {
+  animation:heroElementIn .9s ease-out both 1.05s;
+}
+
+.hero-stage.hero-sequence-active .intro-diamond {
+  animation:heroElementIn .85s ease-out both 1.2s;
+}
+/* Sourav and Malika rise together using the original name reveal; the ampersand keeps its own fade. */
+.hero-stage.hero-sequence-active .intro-groom {
+  animation:heroNameIn 1.7s cubic-bezier(.2,.8,.22,1) both 1.48s;
+}
+.hero-stage.hero-sequence-active .intro-amp {
+  animation:heroElementIn 1.06s ease-out both 1.9s;
+}
+.hero-stage.hero-sequence-active .intro-bride {
+  animation:heroNameIn 1.7s cubic-bezier(.2,.8,.22,1) both 1.48s;
+}
+.hero-stage.hero-sequence-active .scroll-down {
+  animation:heroScrollIn .85s ease-out both 3.9s;
+}
+
+@keyframes heroSkyIn { from{opacity:0}to{opacity:1} }
+@keyframes heroPalaceIn { from{opacity:0;filter:blur(2px)}to{opacity:.88;filter:blur(0)} }
+@keyframes heroElementIn {
+  from { opacity:0; transform:translate3d(0,22px,0); filter:blur(1.4px); }
+  to   { opacity:1; transform:translate3d(0,0,0); filter:blur(0); }
+}
+@keyframes heroNameIn {
+  from { opacity:0; transform:translate3d(0,38px,0) scale(.985); filter:blur(1.4px); }
+  to   { opacity:1; transform:translate3d(0,0,0) scale(1); filter:blur(0); }
+}
+@keyframes gentleHeroFloat {
+  0%,100% { transform:translateY(0); }
+  50%     { transform:translateY(-5px); }
+}
+@keyframes heroScrollIn {
+  from{opacity:0;transform:translate(-50%,9px)}
+  to{opacity:1;transform:translate(-50%,0)}
+}
+
+/* Existing approved typography and palace scroll effects stay intact. */
+.hero-names { line-height:.86; gap:12px; }
+.hero-name--groom,.hero-name--bride { display:block; }
+.hero-amp { line-height:1; }
+.prayer { letter-spacing:3.4px; }
+.hero-eyebrow { letter-spacing:4px;font-size:12px; }
+@media(max-width:600px){
+  .hero-stage .idol-float { padding:10px; }
+  .hero-stage .idol-float::before { width:92px; height:92px; }
+  .hero-stage .idol-float::after { width:100px; height:100px; }
+  .hero-stage .idol-float .ganesha {width:77px;height:78px;}
+  .hero-stage .prayer-float {margin-top:10px;}
+}
+@media(prefers-reduced-motion:reduce) {
+  .hero-stage .hero-sky,
+  .hero-stage .palace-image,
+  .hero-stage .scroll-down,
+  .hero-stage .hero-content .intro-piece {opacity:1!important;animation:none!important;transform:none!important;filter:none!important}
+  .hero-stage .idol-float,.hero-stage .prayer-float {animation:none!important}
+}
+
+/* Allow the longer personal invitation heading to fit on narrow phones. */
+.hero-stage .hero-eyebrow {
+  display:flex; align-items:center; justify-content:center; gap:12px;
+  max-width:min(92vw,690px); margin-left:auto; margin-right:auto;
+  white-space:normal; line-height:1.55;
+}
+.hero-stage .hero-eyebrow .invitation-heading-text { min-width:0; }
+.hero-stage .hero-eyebrow .invitation-marker { flex:none; }
+@media (max-width:600px) {
+  .hero-stage .hero-eyebrow {
+    gap:7px; max-width:calc(100vw - 36px);
+    font-size:10px; letter-spacing:1.5px; line-height:1.55;
+  }
+  .hero-stage .hero-eyebrow .invitation-heading-text { max-width:280px; }
+}
+
+
+/* ===== Original stylesheet: music-controls.css ===== */
+/* Only show the audio toggle after the guest opens the invitation. */
+body.gate-closed #musicToggle { display:none !important; }
+#musicToggle:not([hidden]) { display:grid; place-items:center; font-family:Georgia,serif; font-size:23px; line-height:1; }
+#musicToggle[aria-pressed="true"] { box-shadow:0 7px 18px #0002,0 0 0 3px #d1ac6a4d; }
+
+
+/* ===== Original stylesheet: section-refinements-v8.css ===== */
+/* V8 — Targeted typography and spacing refinements.
+   All opening, scroll, castle, and background-music behaviors remain intact. */
+
+/* Only the invitation sentence; no decorative double-line markers. */
+.hero-stage .hero-eyebrow {
+  letter-spacing: .22em;
+}
+
+/* A slightly larger scroll label and a much more discreet V-chevron. */
+.hero-stage .scroll-down {
+  gap: 4px;
+}
+.hero-stage .scroll-down span:first-child {
+  font-size: 10px;
+  letter-spacing: .24em;
+  line-height: 1.35;
+}
+.hero-stage .scroll-down .down-arrow {
+  font-size: 20px;
+  line-height: .78;
+  font-weight: 400;
+  animation: bob 2s ease-in-out infinite;
+}
+
+/* The name/parent cards contain only the identity and family details. */
+.meet .person-card {
+  min-height: 161px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 32px 21px;
+  text-align: center;
+}
+.meet .person-card h3 {
+  font-size: clamp(37px, 3.9vw, 49px);
+  line-height: 1.05;
+  margin: 3px 0 12px;
+  font-weight: 600;
+}
+.meet .person-card .parent-text {
+  max-width: 590px;
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* Desktop: no artificial empty zone between the couple and photos.
+   The Meet panel continues to cover the sticky palace during its entrance. */
+@media (min-width: 981px) {
+  .meet {
+    min-height: 0;
+    padding-top: 92px;
+    padding-bottom: 48px;
+    background: linear-gradient(180deg, #fbf7f1 0%, #faf4ed 100%);
+  }
+  .meet .meet-heading { margin-bottom: 62px; }
+  .meet .couple-cards { gap: 24px; }
+  .meet .person-card { min-height: 161px; }
+  .memories {
+    padding-top: 48px;
+    background: linear-gradient(180deg, #faf4ed 0%, #f3e8dc 100%);
+  }
+  .memories .section-inner > header {
+    margin-top: 0;
+  }
+}
+
+/* Tablet: use the same contiguous join without changing mobile's spacing. */
+@media (min-width: 601px) and (max-width: 980px) {
+  .meet { min-height: 0; padding: 98px 0 56px; }
+  .meet .meet-heading { margin-bottom: 66px; }
+  .meet .couple-cards { gap: 25px; }
+  .memories { padding-top: 56px; background: linear-gradient(180deg, #faf4ed, #f3e8dc); }
+}
+
+@media (max-width: 600px) {
+  .hero-stage .scroll-down span:first-child { font-size: 10px; }
+  .hero-stage .scroll-down .down-arrow { font-size: 19px; }
+  .meet .person-card {
+    min-height: 158px;
+    padding: 34px 18px 22px;
+  }
+  .meet .person-card h3 {
+    font-size: clamp(37px, 10vw, 42px);
+    margin: 2px 0 10px;
+  }
+  .meet .person-card .parent-text {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+}
+
+/* Keep smooth static layouts for reduced-motion preferences. */
+@media (prefers-reduced-motion: reduce) {
+  .hero-stage .scroll-down .down-arrow { animation: none; }
+}
+
+/* Prevent the sticky hero from drawing over the following gallery.
+   This is the underlying cause of the desktop cream/orange strip and stray
+   scroll cue appearing between the two independent sections. */
+.memories {
+  position: relative;
+  z-index: 4;
+}
+
+/* The entrance animation uses opacity, so multiply it by a separate
+   scroll-linked filter rather than letting its 'forwards' fill mask the
+   scroll cue's disappearance. */
+.hero-stage .scroll-down {
+  filter: opacity(var(--scroll-prompt-opacity, 1));
+}
+
+
+/* V9 — Move the decorative palace/floral motifs to frame the Meet the Couple
+   section more clearly, and add a visual divider before Our Moments. */
+.meet::before {
+  content: none;
+}
+.meet .meet-inner {
+  overflow: visible;
+}
+.meet .meet-heading,
+.meet .couple-cards,
+.meet .meet-section-separator {
+  position: relative;
+  z-index: 2;
+}
+.meet-motif {
+  position: absolute;
+  width: 290px;
+  height: 250px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: .54;
+}
+.meet-motif .motif-palace,
+.meet-motif .motif-floral {
+  position: absolute;
+  display: block;
+}
+.meet-motif .motif-palace {
+  inset: 0;
+  background: url('assets/palace-skyline.webp') center top / 76% auto no-repeat;
+  opacity: .44;
+  filter: sepia(.18) saturate(.86);
+}
+.meet-motif .motif-floral {
+  width: 138px;
+  height: 138px;
+  background: url('assets/floral-mark.svg') center / contain no-repeat;
+  opacity: .88;
+  mix-blend-mode: multiply;
+}
+.meet-motif--tl {
+  left: -6px;
+  top: -2px;
+}
+.meet-motif--tl .motif-palace {
+  background-position: 52% 0;
+}
+.meet-motif--tl .motif-floral {
+  left: 18px;
+  top: 55px;
+}
+.meet-motif--br {
+  right: -10px;
+  bottom: 56px;
+  transform: scaleX(-1);
+}
+.meet-motif--br .motif-palace {
+  background-position: 50% 0;
+}
+.meet-motif--br .motif-floral {
+  left: 8px;
+  top: 86px;
+}
+.meet-section-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  width: min(100%, 420px);
+  margin: 34px auto 0;
+  opacity: .92;
+}
+.meet-section-separator .separator-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(210,177,115,0), rgba(202,165,95,.85), rgba(210,177,115,0));
+}
+.meet-section-separator .separator-emblem {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  background: url('assets/floral-mark.svg') center / contain no-repeat;
+  opacity: .8;
+}
+
+@media (min-width: 981px) {
+  .meet {
+    padding-top: 92px;
+    padding-bottom: 24px;
+  }
+  .meet .meet-heading { margin-bottom: 64px; }
+  .meet .couple-cards { gap: 24px; }
+  .meet .person-card { width: min(100%, 720px); }
+  .meet-section-separator { margin-top: 30px; }
+  .memories {
+    padding-top: 34px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 980px) {
+  .meet {
+    padding-bottom: 30px;
+  }
+  .meet-motif {
+    width: 220px;
+    height: 190px;
+    opacity: .5;
+  }
+  .meet-motif .motif-floral {
+    width: 102px;
+    height: 102px;
+  }
+  .meet-motif--tl {
+    left: -8px;
+    top: 12px;
+  }
+  .meet-motif--tl .motif-floral {
+    left: 6px;
+    top: 48px;
+  }
+  .meet-motif--br {
+    right: -10px;
+    bottom: 72px;
+  }
+  .meet-motif--br .motif-floral {
+    left: 4px;
+    top: 72px;
+  }
+  .meet-section-separator {
+    margin-top: 28px;
+  }
+  .memories { padding-top: 42px; }
+}
+
+@media (max-width: 600px) {
+  .meet {
+    padding-bottom: 24px;
+  }
+  .meet-motif {
+    width: 148px;
+    height: 136px;
+    opacity: .48;
+  }
+  .meet-motif .motif-palace {
+    background-size: 76% auto;
+  }
+  .meet-motif .motif-floral {
+    width: 82px;
+    height: 82px;
+  }
+  .meet-motif--tl {
+    left: -16px;
+    top: 18px;
+  }
+  .meet-motif--tl .motif-floral {
+    left: 4px;
+    top: 40px;
+  }
+  .meet-motif--br {
+    right: -16px;
+    bottom: 66px;
+  }
+  .meet-motif--br .motif-floral {
+    left: 2px;
+    top: 54px;
+  }
+  .meet-section-separator {
+    width: min(100%, 300px);
+    gap: 14px;
+    margin-top: 26px;
+  }
+  .meet-section-separator .separator-emblem {
+    width: 22px;
+    height: 22px;
+    flex-basis: 22px;
+  }
+  .memories {
+    padding-top: 40px;
+  }
+}
+
+/* V11: Corner palace/floral motif elements were removed from the couple section HTML, keeping its background plain. The floral divider between sections is retained. */
+
+
+/* ===== Original stylesheet: couple-audio-v10.css ===== */
+/* V10: restore the reference couple messages; bespoke ivory/gold sound control. */
+.meet .person-card {
+  min-height: 225px;
+  padding: 33px 28px 28px;
+  justify-content: center;
+}
+.meet .person-card h3 { margin-bottom: 9px; }
+.meet .person-card .parent-text {
+  margin: 0 0 13px;
+}
+.meet .person-card .couple-quote {
+  display: block;
+  max-width: 455px;
+  margin: 0 auto;
+  color: #8b7164;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(13px, 1.16vw, 15px);
+  line-height: 1.7;
+  letter-spacing: 0;
+  text-align: center;
+  text-wrap: pretty;
+}
+#musicToggle.music-toggle {
+  width: 55px;
+  height: 55px;
+  right: 19px;
+  bottom: 25px;
+  border: 1.4px solid #d5ad62;
+  border-radius: 50%;
+  background: #fffaf4;
+  color: #c19437;
+  display: grid;
+  grid-template-rows: 26px 8px;
+  place-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 1px;
+  padding: 5px;
+  box-shadow: 0 3px 16px rgba(88, 58, 26, .13);
+  line-height: 1;
+  cursor: pointer;
+}
+#musicToggle.music-toggle[hidden], body.gate-closed #musicToggle.music-toggle { display:none !important; }
+#musicToggle.music-toggle:focus-visible { outline: 3px solid #986c29; outline-offset: 3px; }
+#musicToggle .sound-icon { width: 23px; height: 23px; display: block; }
+#musicToggle .sound-icon svg { width: 23px; height: 23px; display: block; }
+#musicToggle[data-muted="false"] .sound-icon--off,
+#musicToggle[data-muted="true"] .sound-icon--on { display: none; }
+#musicToggle .sound-bars { display: flex; height: 8px; align-items: flex-end; justify-content: center; gap: 3px; }
+#musicToggle .sound-bars i { display: block; width: 2px; height: 4px; border-radius: 2px; background: currentColor; }
+#musicToggle .sound-bars i:nth-child(2) { height: 7px; }
+#musicToggle .sound-bars i:nth-child(3) { height: 5px; }
+#musicToggle[data-muted="true"] .sound-bars { opacity: .5; }
+#musicToggle[data-muted="false"][data-playing="true"] .sound-bars i { animation: volumeBeat 950ms ease-in-out infinite alternate; }
+#musicToggle[data-muted="false"][data-playing="true"] .sound-bars i:nth-child(2) { animation-delay: -450ms; }
+#musicToggle[data-muted="false"][data-playing="true"] .sound-bars i:nth-child(3) { animation-delay: -220ms; }
+@keyframes volumeBeat { to { transform: scaleY(.55); } }
+@media (max-width:600px) {
+  .meet .person-card { min-height: 215px; padding: 32px 19px 28px; }
+  .meet .person-card .couple-quote { max-width: 355px; font-size: 14px; line-height: 1.7; }
+  .meet .person-card .parent-text { margin-bottom: 12px; }
+  #musicToggle.music-toggle { width: 51px; height: 51px; right: 14px; bottom: 19px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  #musicToggle .sound-bars i { animation: none !important; }
+}
+
+
+/* ===== Original stylesheet: date-reveal-v12.css ===== */
+/* V13: refined save-the-date reveal with golden textured doors, maroon seal, floral interior corners, and enhanced celebration. */
+.countdown {
+  padding: 102px 0 116px;
+  min-height: 0;
+  background: linear-gradient(180deg, #fbf4f0 0%, #f9f2ee 52%, #faf4ed 100%);
+}
+.countdown .faded-palace { opacity: .11; }
+.countdown-inner { max-width: 940px; }
+.countdown .countdown-title { font-size: clamp(60px, 7vw, 94px); }
+.countdown .date-caption {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 0;
+  min-height: 22px;
+  overflow: hidden;
+  color: #b28b51;
+  font: 600 12px/1.5 'Montserrat', 'DM Sans', sans-serif;
+  letter-spacing: .26em;
+  text-align: center;
+}
+.date-caption > span {
+  grid-area: 1 / 1;
+  display: block;
+  white-space: nowrap;
+  transition: opacity .65s ease, transform .7s ease;
+}
+.date-caption .caption-before { opacity: 1; transform: translateY(0); }
+.date-caption .caption-after  { opacity: 0; transform: translateY(14px); }
+.countdown.date-is-revealed .date-caption .caption-before {
+  opacity: 0;
+  transform: translateY(-14px);
+}
+.countdown.date-is-revealed .date-caption .caption-after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.countdown .date-intro-rule { margin: 13px auto 34px; width: 88px; }
+.date-reveal { width: min(100%, 900px); margin: 0 auto; }
+.date-reveal-frame {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: 460px;
+  overflow: hidden;
+  border: 1px solid rgba(196, 151, 94, .52);
+  border-radius: 20px;
+  perspective: 1200px;
+  background: #fff9f2;
+  box-shadow: 0 19px 56px rgba(93, 53, 43, .12), 0 2px 8px rgba(129, 85, 48, .08);
+}
+.date-reveal-content {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 34px 27px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 28%, rgba(255,255,255,.82) 0%, rgba(255,250,241,.55) 40%, transparent 78%),
+    linear-gradient(165deg, #fffaf4 0%, #f3e4d2 100%);
+  opacity: 0;
+  transform: scale(.97);
+  transition: opacity .7s ease .35s, transform 1.2s cubic-bezier(.18,.75,.18,1) .25s;
+}
+.date-reveal-content::before,
+.date-reveal-content::after {
+  content: '';
+  position: absolute;
+  border: 1px solid rgba(193, 148, 84, .35);
+  border-radius: 13px;
+  pointer-events: none;
+}
+.date-reveal-content::before { inset: 14px; }
+.date-reveal-content::after { inset: 21px; border-color: rgba(193,148,84,.18); }
+.date-card-month {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(44px, 5vw, 59px);
+  line-height: 1.1;
+  color: #7a5237;
+  margin: 0;
+}
+.date-card-day {
+  font: 600 clamp(92px, 10vw, 122px)/.98 'Cormorant Garamond', Georgia, serif;
+  color: #594036;
+  margin: 1px 0 0;
+  font-variant-numeric: lining-nums;
+}
+.date-card-year {
+  font: 500 17px/1.3 'Montserrat', sans-serif;
+  letter-spacing: .55em;
+  color: #b28757;
+  margin: 3px 0 0;
+  padding-left: .55em;
+}
+.date-card-rule {
+  width: min(78%, 400px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d7bc98, transparent);
+  margin: 25px auto 19px;
+}
+.date-countdown {
+  width: min(100%, 460px);
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 10px minmax(0,1fr) 10px minmax(0,1fr) 10px minmax(0,1fr);
+  gap: 5px;
+  align-items: start;
+}
+.date-clock-unit { display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 0; }
+.date-clock-unit strong {
+  font: 600 clamp(31px, 4vw, 43px)/1 'Cormorant Garamond', Georgia, serif;
+  font-variant-numeric: tabular-nums;
+  color: #946b53;
+}
+.date-clock-unit span {
+  font: 600 9px/1.5 'Montserrat', 'DM Sans', sans-serif;
+  letter-spacing: .14em;
+  color: #a28a75;
+}
+.date-clock-colon { font: 400 27px/1.08 'Cormorant Garamond', serif; color: #bd9c70; }
+/* A single, quiet gleam crosses the whole reveal card, not each door separately. */
+
+.date-door {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: 3;
+  background:
+    repeating-linear-gradient(45deg,
+      rgba(255,255,255,.055) 0 18px,
+      rgba(0,0,0,0) 18px 36px),
+    repeating-linear-gradient(-45deg,
+      rgba(255,255,255,.045) 0 18px,
+      rgba(0,0,0,0) 18px 36px),
+    linear-gradient(180deg, #f1da9d 0%, #e7ca83 100%);
+  transition: transform 1.1s cubic-bezier(.72, .06, .22, 1);
+  backface-visibility: hidden;
+  will-change: transform;
+}
+.date-reveal-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  background: linear-gradient(135deg,
+    transparent 44%,
+    rgba(255, 252, 235, .34) 50%,
+    transparent 56%);
+  background-size: 280% 280%;
+  background-position: 100% 100%;
+  animation: oneGoldenGleam 8s linear infinite;
+  transition: opacity .25s ease;
+}
+.date-reveal.is-revealed .date-reveal-frame::before {
+  opacity: 0;
+  animation: none;
+}
+@keyframes oneGoldenGleam {
+  0%, 14% { background-position: 100% 100%; }
+  70%, 100% { background-position: 0% 0%; }
+}
+
+.date-door::before,
+.date-door::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  border: 1px solid rgba(255, 248, 225, .6);
+  border-radius: 5px;
+}
+.date-door::before { inset: 14px 12px; }
+.date-door::after { inset: 21px 19px; border-color: rgba(190, 153, 76, .26); }
+.date-door-left { left: 0; border-right: 1px solid rgba(181,143,73,.42); box-shadow: inset -8px 0 16px rgba(159,120,44,.12); }
+.date-door-right { right: 0; border-left: 1px solid rgba(255,246,219,.3); box-shadow: inset 8px 0 16px rgba(159,120,44,.08); }
+.date-seal {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  position: absolute;
+  top: 50%; left: 50%;
+  z-index: 5;
+  min-width: 180px;
+  padding: 10px 14px;
+  transform: translate(-50%, -50%);
+  border: 0;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: transform .3s ease, opacity .45s ease, filter .3s ease;
+  touch-action: manipulation;
+}
+.date-seal-star {
+  width: 56px;
+  height: 56px;
+  background: rgba(255,255,255,.95);
+  clip-path: polygon(50% 0%, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0% 50%, 38% 38%);
+  filter: drop-shadow(0 0 10px rgba(255,255,255,.3));
+  animation: dateStarSpin 5.5s linear infinite;
+}
+.date-seal-label {
+  font: 700 12px/1 'Montserrat', 'DM Sans', sans-serif;
+  letter-spacing: .34em;
+  color: #fff;
+  white-space: nowrap;
+}
+.date-seal:hover {
+  transform: translate(-50%, -50%) scale(1.04);
+  filter: brightness(1.05);
+}
+.date-seal:focus-visible { outline: 3px solid rgba(255,255,255,.65); outline-offset: 6px; border-radius: 10px; }
+@keyframes dateStarSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.date-reveal.is-revealed .date-door-left { transform: translateX(-103%) rotateY(-6deg); }
+.date-reveal.is-revealed .date-door-right { transform: translateX(103%) rotateY(6deg); }
+.date-reveal.is-revealed .date-seal { transform: translate(-50%, -50%) scale(.7); opacity: 0; pointer-events:none; }
+.date-reveal.is-revealed .date-reveal-content { opacity: 1; transform: scale(1); }
+.date-reveal-instruction {
+  margin: 18px 0 0;
+  min-height: 18px;
+  font: 600 10px/1.8 'Montserrat', 'DM Sans', sans-serif;
+  letter-spacing: .32em;
+  color: #a77d54;
+  text-align: center;
+  transition: color .4s;
+}
+.date-reveal-instruction span { font-size: 13px; }
+.date-reveal.is-revealed .date-reveal-instruction { color: #9a7e5e; }
+.sr-only {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* Confetti celebration extends across the viewport without visible popper cones. */
+.date-celebration {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  overflow: hidden;
+  visibility: hidden;
+}
+.date-celebration.is-celebrating { visibility: visible; }
+.date-celebration canvas { position:absolute; inset:0; width:100%; height:100%; }
+
+
+@media (max-width: 600px) {
+  .countdown { padding: 90px 0 90px; min-height: 0; }
+  .countdown .countdown-title { font-size: clamp(59px, 14.6vw, 77px); }
+  .countdown .date-caption { margin-top: 24px; font-size: 10px; letter-spacing: .19em; }
+  .countdown .date-intro-rule { margin: 13px auto 30px; }
+  .date-reveal-frame { height: 395px; border-radius: 17px; }
+  .date-reveal-content { padding: 20px 15px; }
+  .date-reveal-content::before { inset: 10px; }
+  .date-reveal-content::after { inset: 16px; }
+  .date-card-month { font-size: 49px; }
+  .date-card-day { font-size: 93px; }
+  .date-card-year { font-size: 14px; }
+  .date-card-rule { margin: 24px auto 21px; }
+  .date-countdown { width: min(100%, 305px); gap: 3px; grid-template-columns: minmax(0,1fr) 5px minmax(0,1fr) 5px minmax(0,1fr) 5px minmax(0,1fr); }
+  .date-clock-unit strong { font-size: 29px; }
+  .date-clock-unit span { font-size: 7px; letter-spacing: .08em; }
+  .date-clock-colon { font-size: 22px; }
+  .date-door::before { inset: 10px 8px; }
+  .date-door::after { inset: 16px 14px; }
+  .date-seal { min-width: 150px; gap: 12px; padding: 8px 10px; }
+  .date-seal-star { width: 46px; height: 46px; }
+  .date-seal-label { font-size: 10px; letter-spacing: .28em; }
+  .date-reveal-instruction { font-size: 9px; letter-spacing: .25em; }
+}
+@media (max-width: 370px) {
+  .countdown .countdown-title { font-size: 53px; }
+  .date-reveal-frame { height: 380px; }
+  .date-card-month { font-size: 45px; }
+  .date-card-day { font-size: 86px; }
+  .date-countdown { width: min(100%, 282px); }
+  .date-clock-unit strong { font-size: 27px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .date-reveal * { animation: none !important; transition-duration: .01ms !important; }
+  .date-celebration { display:none !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .date-reveal-frame::before { animation: none; opacity: 0; }
+}
+
+
+/* ===== Original stylesheet: events-venues-v16.css ===== */
+/* V16 — consistent celebration cards and independent venue cards. */
+.events .main-section-heading {
+  font-size: clamp(44px, 6.2vw, 88px);
+  line-height: 1.02;
+  text-wrap: balance;
+}
+.events .section-subhead {
+  text-transform: none;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 500;
+  letter-spacing: .035em;
+  color: #ba914e;
+  margin: 15px 0 64px;
+}
+.events .event-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+.events .event-card {
+  min-width: 0;
+  height: 100%;
+  padding: 10px;
+}
+.events .event-card-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 116px 126px 78px 1fr 132px;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  min-height: 665px;
+  padding: 30px 20px 32px;
+  text-align: center;
+}
+.events .event-card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  gap: 2px;
+}
+.events .event-flower { width: 72px; height: 70px; margin: 0; }
+.events .join-us { font-size: 15px; line-height: 1.2; }
+.events .event-card h3,
+.events .event-card.event-card--long-title h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 0;
+  height: 100%;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(37px, 3vw, 49px);
+  line-height: 1.01;
+  font-weight: 600;
+  overflow-wrap: normal;
+  text-wrap: balance;
+}
+.events .event-date-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.events .event-date {
+  font-size: 11px;
+  line-height: 1.35;
+  letter-spacing: .16em;
+  margin: 0;
+  font-weight: 800;
+  color: #574330;
+}
+.events .event-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 310px;
+  margin: 0;
+  padding: 5px 0;
+  font-family: var(--serif);
+  font-size: clamp(21px, 2.1vw, 27px);
+  line-height: 1.22;
+  font-style: italic;
+  text-wrap: balance;
+}
+.events .event-facts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid rgba(211,179,125,.32);
+  padding-top: 13px;
+}
+.events .event-detail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  margin: 0;
+  color: #6e5440;
+  font: 500 13px/1.45 var(--sans);
+  text-wrap: balance;
+}
+.events .event-detail span { min-width: 0; }
+.detail-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  color: #b58e48;
+  margin-top: 1px;
+}
+/* Venue cards have matching dimensions and never contain embedded maps. */
+.venue .venue-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1080px;
+  align-items: stretch;
+}
+.venue .venue-address {
+  min-width: 0;
+  width: 100%;
+  min-height: 455px;
+  padding: 50px 32px 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+.venue .venue-eyebrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 11px;
+  letter-spacing: .2em;
+}
+.venue .venue-eyebrow .detail-icon { width: 22px; height: 22px; flex-basis: 22px; }
+.venue .venue-address h3 {
+  font-size: clamp(43px, 4.5vw, 63px);
+  line-height: 1.0;
+  margin: 10px 0 22px;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+.venue .venue-address address {
+  font-size: clamp(21px, 2.5vw, 28px);
+  line-height: 1.2;
+}
+.venue .venue-note {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 19px 0 0;
+  max-width: 380px;
+}
+.venue .venue-buttons {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.venue .venue-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: .12em;
+  padding: 12px 15px;
+  min-height: 43px;
+  border-radius: 12px;
+}
+@media (max-width: 1100px) and (min-width: 901px) {
+  .events .event-card-inner { padding-left: 13px; padding-right: 13px; }
+  .events .event-card h3 { font-size: 38px; }
+  .events .event-quote { font-size: 22px; }
+  .events .event-detail { font-size: 12px; }
+}
+@media (max-width: 900px) {
+  .events .event-list { grid-template-columns: 1fr; max-width: 530px; margin-inline: auto; gap: 32px; }
+  .events .event-card-inner { grid-template-rows: 100px 114px 74px 1fr 124px; min-height: 605px; padding: 22px 24px 25px; }
+  .events .event-card h3 { font-size: clamp(37px, 6vw, 48px); }
+  .events .event-quote { font-size: clamp(23px, 3.5vw, 29px); max-width: 410px; }
+  .venue .venue-grid { grid-template-columns: 1fr; gap: 24px; max-width: 570px; }
+  .venue .venue-address { min-height: 408px; }
+}
+@media (max-width: 600px) {
+  .events .section-subhead { margin-bottom: 58px; }
+  .events .event-list { gap: 32px; }
+  .events .event-card { padding: 8px; }
+  .events .event-card-inner { min-height: 615px; grid-template-rows: 99px 122px 68px 1fr 134px; padding: 26px 15px 24px; }
+  .events .event-card h3 { font-size: clamp(36px, 9.5vw, 43px); }
+  .events .event-date { font-size: 10px; letter-spacing: .13em; }
+  .events .event-quote { font-size: clamp(23px, 7vw, 29px); }
+  .events .event-detail { font-size: 12px; }
+  .events .event-facts { gap: 13px; }
+  .venue .venue-address { min-height: 390px; padding: 46px 21px 32px; }
+  .venue .venue-address h3 { font-size: clamp(42px, 11vw, 56px); }
+  .venue .venue-address address { font-size: 26px; }
+  .venue .venue-buttons a { font-size: 10px; padding: 11px 13px; }
+}
+@media (max-width: 370px) {
+  .events .event-card-inner { min-height: 640px; grid-template-rows: 96px 132px 68px 1fr 134px; padding-inline: 12px; }
+  .events .event-card h3 { font-size: 36px; }
+  .events .event-quote { font-size: 24px; }
+  .venue .venue-buttons { flex-direction: column; }
+  .venue .venue-buttons a { width: 100%; }
+}
+
+
+/* ===== Original stylesheet: venues-thanks-v17.css ===== */
+/* V17: original tabbed venue layout and calm falling-heart finale. */
+.venue .venue-tabs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 12px;
+  max-width: 700px;
+  margin: -12px auto 34px;
+}
+.venue .venue-tab {
+  width: auto;
+  min-width: 0;
+  flex: 1 1 0;
+  padding: 14px 20px;
+  text-align: center;
+  white-space: normal;
+}
+.venue .venue-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, .92fr) minmax(340px, 1.12fr);
+  gap: 24px;
+  max-width: 1080px;
+  margin-inline: auto;
+  align-items: stretch;
+}
+.venue .venue-address {
+  min-height: 465px;
+  padding: 42px 27px 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 0;
+}
+.venue .venue-address h3 {
+  font-size: clamp(35px, 3.6vw, 58px);
+  line-height: 1.03;
+  margin: 10px 0 15px;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: auto;
+  text-wrap: balance;
+}
+.venue .venue-address address {font-size:clamp(22px, 2.15vw, 29px);line-height:1.24;}
+.venue .venue-note {font-size:16px;line-height:1.35;margin:16px 0 0;}
+.venue .venue-eyebrow {justify-content:center;gap:10px;}
+.venue .venue-location-symbol {
+  width:23px;height:23px;flex:0 0 23px;display:block;
+  background: center/contain no-repeat url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="%23b58e48" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/%3E%3Ccircle cx="12" cy="10" r="2.5"/%3E%3C/svg%3E');
+}
+.venue .venue-buttons {margin-top:auto;padding-top:28px;gap:10px;}
+.venue .venue-buttons a {font-size:10px;letter-spacing:.08em;padding:12px 11px;min-height:45px;}
+.venue .venue-map {min-width:0;min-height:465px;height:auto;padding:12px;}
+.venue .venue-map iframe {display:block;width:100%;height:100%;min-height:438px;border:0;border-radius:9px;background:#f5eee5;}
+.venue .map-open {top:27px;left:27px;z-index:2;}
+@media(max-width:900px) {
+  .venue .venue-grid {grid-template-columns:minmax(0,1fr);gap:20px;max-width:570px;}
+  .venue .venue-address {min-height:340px;padding:39px 24px 27px;}
+  .venue .venue-map {height:400px;min-height:400px;}
+  .venue .venue-map iframe {height:100%;min-height:373px;}
+  .venue .venue-address h3 {font-size:clamp(42px,7vw,57px);}
+}
+@media(max-width:600px) {
+  .venue .venue-tabs {gap:8px;margin:-15px auto 25px;}
+  .venue .venue-tab {width:auto;flex:1 1 50%;font-size:10px;letter-spacing:0;padding:13px 6px;}
+  .venue .venue-address {min-height:350px;padding:39px 19px 26px;}
+  .venue .venue-address h3 {font-size:clamp(38px,10vw,52px);}
+  .venue .venue-address address {font-size:25px;}
+  .venue .venue-map {min-height:370px;height:370px;}
+  .venue .venue-map iframe {min-height:343px;}
+  .venue .venue-note {font-size:15px;}
+  .venue .venue-buttons a {font-size:9px;letter-spacing:.05em;}
+}
+@media(max-width:370px) {
+  .venue .venue-address h3 {font-size:38px;}
+  .venue .venue-buttons {flex-direction:column;gap:8px;}
+  .venue .venue-buttons a {width:100%;}
+}
+/* The previous footer's extra wish and decorative fixed hearts are removed.
+   Floating hearts are translucent and remain behind the message. */
+.thanks {--heart-distance:760px;isolation:isolate;}
+.thanks .thanks-content {z-index:3;max-width:720px;}
+.thanks .footer-monogram {width:116px;height:116px;font-size:44px;margin-bottom:45px;}
+.thanks h2 {font-size:clamp(68px,8vw,111px);margin-bottom:19px;}
+.thanks .thanks-rule {font-size:23px;}
+.thanks .thanks-quote {font-size:clamp(23px,2.7vw,35px);line-height:1.36;margin:48px 0 35px;}
+.thanks .thanks-heart-layer {
+  position:absolute;
+  inset:0;
+  z-index:2;
+  overflow:hidden;
+  pointer-events:none;
+}
+.thanks .falling-heart {
+  display:block;
+  position:absolute;
+  left:var(--heart-left);
+  top:-26px;
+  color:var(--heart-color);
+  font-family:Georgia,serif;
+  font-size:var(--heart-size);
+  line-height:1;
+  opacity:0;
+  user-select:none;
+  animation: thankHeartFall var(--heart-duration) linear var(--heart-delay) infinite;
+  animation-play-state:paused;
+  will-change:transform, opacity;
+}
+.thanks.hearts-in-view .falling-heart {animation-play-state:running;}
+@keyframes thankHeartFall {
+  0% {opacity:0;transform:translate3d(0,-10px,0) rotate(-14deg);}
+  10%,88% {opacity:var(--heart-opacity);}
+  100% {opacity:0;transform:translate3d(var(--heart-drift),var(--heart-distance),0) rotate(17deg);}
+}
+@media(max-width:600px) {
+  .thanks .footer-monogram {width:99px;height:99px;font-size:39px;margin-bottom:39px;}
+  .thanks h2 {font-size:clamp(64px,18vw,76px);}
+  .thanks .thanks-quote {font-size:clamp(24px,6.2vw,30px);margin:43px 0 32px;}
+}
+@media(prefers-reduced-motion: reduce) {
+  .thanks .falling-heart {animation:none;opacity:0;}
+}
+
+
+/* ===== Original stylesheet: polish-v18.css ===== */
+/* V18 — symmetric one-line event locations, compact venue details and softer finale. */
+/* Keep venue text to a single line without reducing card symmetry. */
+.events .event-facts { min-width: 0; }
+.events .event-detail { align-items: center; flex-wrap: nowrap; gap: 7px; }
+.events .event-detail:first-child { white-space: nowrap; font-size: clamp(10px, .93vw, 12.5px); letter-spacing: -.015em; }
+.events .event-detail:first-child span { white-space: nowrap; flex: 0 1 auto; min-width: 0; }
+.events .event-detail .detail-icon { width: 15px; height: 15px; flex: 0 0 15px; }
+@media (min-width: 901px) and (max-width: 1170px) {
+  .events .event-detail:first-child { font-size: 10px; gap: 5px; }
+  .events .event-card-inner { padding-left: 10px; padding-right: 10px; }
+}
+@media (max-width: 900px) {
+  .events .event-detail:first-child { font-size: clamp(10px, 1.8vw, 12px); }
+}
+@media (max-width: 600px) {
+  .events .event-detail:first-child { font-size: clamp(9px, 2.65vw, 11px); letter-spacing: -.03em; gap: 5px; }
+  .events .event-detail .detail-icon { width: 14px; height: 14px; flex-basis: 14px; }
+}
+/* More centered, balanced cards with one venue at a time and vertical CTA stack. */
+.venue .venue-address {
+  justify-content: center;
+  min-height: 430px;
+  padding: 38px 28px;
+}
+.venue .venue-eyebrow { margin: 0 0 14px; }
+.venue .venue-address h3 { margin: 8px 0 15px; }
+.venue .venue-address address { margin: 0; }
+.venue .venue-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: min(100%, 255px);
+  margin: 25px auto 0;
+  padding: 0;
+  gap: 12px;
+}
+.venue .venue-buttons a {
+  width: 100%;
+  min-height: 46px;
+  font-size: 10px;
+  letter-spacing: .085em;
+  line-height: 1.2;
+  padding: 12px 10px;
+}
+.venue .venue-map { min-height: 430px; }
+.venue .venue-map iframe { min-height: 403px; }
+@media (max-width: 900px) {
+  .venue .venue-address { min-height: 355px; padding: 37px 24px; }
+  .venue .venue-map { min-height: 400px; }
+  .venue .venue-map iframe { min-height: 373px; }
+}
+@media (max-width: 600px) {
+  .venue .venue-address { min-height: 352px; padding: 36px 20px 30px; }
+  .venue .venue-buttons { margin-top: 24px; width: min(100%, 250px); }
+  .venue .venue-buttons a { font-size: 10px; }
+  .venue .venue-map { min-height: 370px; }
+  .venue .venue-map iframe { min-height: 343px; }
+}
+/* Leave the symmetrical fine gold line beneath Thank You, not a hand emoji. */
+.thanks .thanks-rule { gap: 14px; }
+.thanks .thanks-rule::before, .thanks .thanks-rule::after { width: 52px; }
+
+
+/* ===== Original stylesheet: polish-v19.css ===== */
+/* V19 — only requested headline, label, venue, event and idol refinements. */
+
+/* Cohesive heading colours, borrowing the existing Meet the Couple heading's
+   warm dark brown and the same elegant Cormorant serif. */
+.meet .script-heading,
+.memories .main-section-heading,
+.countdown .countdown-title,
+.events .main-section-heading {
+  color: #5c3d31;
+}
+.events .main-section-heading {
+  font-family: var(--serif);
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(64px, 7vw, 102px);
+  line-height: .98;
+  letter-spacing: -.03em;
+  text-transform: none;
+}
+/* Same caption style/colour used for MEET THE COUPLE, OUR MOMENTS eyebrow,
+   and the pre/post date-reveal COUNTING DOWN / SAVE THE DATE labels. */
+.meet .section-label,
+.memories .section-label,
+.countdown .date-caption,
+.events .section-subhead {
+  font-family: var(--sans);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.55;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: #977246;
+}
+.events .section-subhead {margin: 15px 0 64px;}
+
+/* Unadorned solid backdrop, no stretched palace/floral corner illustration. */
+.events { background: #faf5ef; }
+.events::before, .events::after { content: none !important; display: none !important; }
+
+/* Sophisticated watercolor lotus / roses / foliage replacing the generic icon. */
+.events .event-flower {
+  display: block;
+  width: 175px;
+  height: 83px;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+  mix-blend-mode: normal;
+}
+.events .event-card-top { gap: 0; }
+
+/* Venue and clock labels are matched in calculated font size on each device.
+   Preserve the approved single-line location labels. */
+.events .event-detail,
+.events .event-detail:first-child {
+  font-size: 12px;
+  letter-spacing: -.015em;
+  font-weight: 500;
+  line-height: 1.45;
+  white-space: nowrap;
+  text-wrap: nowrap;
+}
+.events .event-detail span { white-space: nowrap; }
+
+/* Match map and address card widths & heights, including border and padding.
+   Force an actual two-column 50:50 split on desktop. */
+.venue .venue-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+.venue .venue-address,
+.venue .venue-map {
+  box-sizing: border-box;
+  width: 100%;
+  height: 430px;
+  min-height: 430px;
+  max-height: 430px;
+}
+.venue .venue-map {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+.venue .venue-map iframe {
+  box-sizing: border-box;
+  flex: 1 1 0;
+  height: 100%;
+  min-height: 0;
+  width: 100%;
+}
+
+/* An unobtrusive, proportional reduction in the Ganesha figure and its rings. */
+.hero-stage .idol-float { padding: 11px; }
+.hero-stage .idol-float .ganesha { width: 80px; height: 81px; }
+.hero-stage .idol-float::before { width: 99px; height: 99px; }
+.hero-stage .idol-float::after { width: 109px; height: 109px; }
+
+@media (min-width: 901px) and (max-width: 1170px) {
+  .events .event-detail, .events .event-detail:first-child { font-size: 10.5px; }
+}
+@media (max-width: 900px) {
+  .events .event-detail, .events .event-detail:first-child { font-size: 11.5px; }
+  .venue .venue-grid { grid-template-columns: minmax(0, 1fr); }
+  .venue .venue-address,
+  .venue .venue-map { height: 400px; min-height: 400px; max-height: 400px; }
+}
+@media (max-width: 600px) {
+  .events .event-detail, .events .event-detail:first-child { font-size: 10px; }
+  .events .section-subhead { margin-bottom: 58px; }
+  .events .event-flower { width: 170px; height: 78px; }
+  .venue .venue-address,
+  .venue .venue-map { height: 370px; min-height: 370px; max-height: 370px; }
+  .hero-stage .idol-float { padding: 10px; }
+  .hero-stage .idol-float .ganesha { width: 68px; height: 69px; }
+  .hero-stage .idol-float::before { width: 87px; height: 87px; }
+  .hero-stage .idol-float::after { width: 95px; height: 95px; }
+}
+@media (max-width: 350px) {
+  .events .event-detail, .events .event-detail:first-child { font-size: 9.3px; }
+  .events .event-detail { gap: 5px; }
+}
+
+
+/* ===== Original stylesheet: events-polish-v26.css ===== */
+/* V26: event detail text enlarged by 2px across each existing responsive breakpoint.
+   Both rows use identical styling, preserving the three-card layout. */
+.events .event-detail,
+.events .event-detail:first-child {
+  font-size: 14px;
+  line-height: 1.38;
+  letter-spacing: -.02em;
+  font-weight: 500;
+}
+.events .event-detail span { white-space: nowrap; }
+@media (min-width: 901px) and (max-width: 1170px) {
+  .events .event-detail,
+  .events .event-detail:first-child { font-size: 12.5px; }
+}
+@media (max-width: 900px) {
+  .events .event-detail,
+  .events .event-detail:first-child { font-size: 13.5px; }
+}
+@media (max-width: 600px) {
+  .events .event-detail,
+  .events .event-detail:first-child { font-size: 12px; }
+}
+@media (max-width: 350px) {
+  .events .event-detail,
+  .events .event-detail:first-child { font-size: 11.3px; }
+}
+
+
+/* ===== Original stylesheet: polish-v29.css ===== */
+/* V29 — Four section headings match the approved "Two Souls, One Destiny" styling.
+   The same responsive font-size calculation is repeated from .script-heading,
+   including the mobile breakpoint, rather than relying on inherited heading sizes. */
+.memories .main-section-heading,
+.countdown .countdown-title,
+.events .main-section-heading,
+.venue .main-section-heading {
+  font-family: var(--serif);
+  font-size: clamp(39px, 5.5vw, 71px);
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #5c3d31;
+  text-transform: none;
+}
+
+/* Screenshot-inspired closing message in the existing navy wedding theme.
+   Preserve the continuous, low-opacity falling hearts and palace backdrop. */
+.thanks .thanks-closing-content {
+  width: min(100%, 700px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.thanks .closing-eyebrow {
+  color: #d7b47e;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: .37em;
+  line-height: 1.6;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.thanks .closing-eyebrow::before,
+.thanks .closing-eyebrow::after {
+  content: '';
+  width: 53px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #ad8954);
+}
+.thanks .closing-eyebrow::after { transform: scaleX(-1); }
+.thanks h2.closing-title {
+  font-family: 'Allura', 'Cormorant Garamond', Georgia, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(46px, 6.3vw, 79px);
+  line-height: 1.2;
+  color: #f2c6b0;
+  margin: 0 auto 27px;
+  text-shadow: 0 2px 22px rgba(10, 22, 38, .25);
+}
+.thanks .closing-invitation {
+  max-width: 580px;
+  font-family: var(--sans);
+  color: #f9f5f1;
+  font-size: clamp(14px, 1.55vw, 17px);
+  font-weight: 400;
+  line-height: 1.85;
+  margin: 0 auto;
+  text-wrap: pretty;
+}
+.thanks .closing-rule {
+  width: 140px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #b99860, transparent);
+  margin: 35px auto 27px;
+}
+.thanks .closing-names {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(38px, 4.7vw, 61px);
+  line-height: 1.15;
+  color: #f4d9e8;
+  margin: 0 auto;
+}
+.thanks .closing-amp { color: #e6b66f; font-style: italic; }
+.thanks .closing-signoff {
+  margin: clamp(56px, 10vw, 95px) auto 0;
+  color: #f4e7d9;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: .23em;
+  line-height: 1.7;
+}
+.thanks .closing-heart { color: #eea655; font-size: 12px; letter-spacing: 0; }
+@media (max-width: 600px) {
+  .memories .main-section-heading,
+  .countdown .countdown-title,
+  .events .main-section-heading,
+  .venue .main-section-heading {
+    font-size: clamp(38px, 9.6vw, 52px);
+  }
+  .thanks .closing-eyebrow {font-size: 9px;gap: 11px;margin-bottom: 16px;}
+  .thanks .closing-eyebrow::before,
+  .thanks .closing-eyebrow::after {width: 35px;}
+  .thanks h2.closing-title {font-size: clamp(45px, 12vw, 65px);margin-bottom: 22px;}
+  .thanks .closing-invitation {font-size: 13px;line-height: 1.85;max-width: 340px;}
+  .thanks .closing-rule {margin: 26px auto 22px;}
+  .thanks .closing-names {font-size: clamp(35px, 9vw, 48px);}
+  .thanks .closing-signoff {margin-top: 65px;font-size: 8.5px;letter-spacing: .17em;}
+}
+
+
+/* ===== Original stylesheet: thanks-original-v31.css ===== */
+/* V31: restore the approved Thank You layout, preserving V30 castle fade and falling hearts. */
+.thanks .thanks-rule {
+  display: block;
+  width: 128px;
+  height: 1px;
+  margin: 24px auto 0;
+  padding: 0;
+  gap: 0;
+  background: linear-gradient(90deg, transparent, rgba(201, 168, 109, .78) 16%, rgba(201, 168, 109, .78) 84%, transparent);
+}
+.thanks .thanks-rule::before,
+.thanks .thanks-rule::after {
+  content: none;
+  display: none;
+}
+
+
+/* ===== Original stylesheet: polish-v33.css ===== */
+/* V33: Small targeted hero and countdown refinements.
+   Retain the approved animations, scroll story, date reveal, and other sections. */
+
+/* 1. Slightly reduce the Ganesha and lift it together with the prayer.
+      Relative top offsets avoid overriding their existing floating animation. */
+.hero-stage .idol-float,
+.hero-stage .prayer-float {
+  position: relative;
+  top: -12px;
+}
+.hero-stage .idol-float .ganesha {
+  width: 73px;
+  height: 74px;
+}
+.hero-stage .idol-float::before {
+  width: 92px;
+  height: 92px;
+}
+.hero-stage .idol-float::after {
+  width: 102px;
+  height: 102px;
+}
+
+/* 2. Increase the wedding invitation eyebrow by 2px and embolden it. */
+.hero-stage .hero-eyebrow {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* 4. Fill the entire width with the same faint background illustration,
+      preserving its aspect ratio and the original vertical feathering. */
+.countdown .faded-palace {
+  background-size: cover;
+  background-position: center 58%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+  /* 3. Move the complete text arrangement higher on phones, above the castle. */
+  .hero-stage .hero-content {
+    padding-top: clamp(62px, 8.5vh, 105px);
+  }
+  .hero-stage .idol-float,
+  .hero-stage .prayer-float {
+    top: -8px;
+  }
+  .hero-stage .idol-float .ganesha {
+    width: 61px;
+    height: 62px;
+  }
+  .hero-stage .idol-float::before {
+    width: 79px;
+    height: 79px;
+  }
+  .hero-stage .idol-float::after {
+    width: 87px;
+    height: 87px;
+  }
+  .hero-stage .hero-eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+
+/* V34 — keep the full invitation sentence on one line on narrow displays.
+   Scale the heading and tracking together rather than clipping it or stretching
+   its container; desktop keeps the approved 14px bold typography. */
+@media (max-width: 600px) {
+  .hero-stage .hero-eyebrow {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+    padding-inline: 0;
+    margin-inline: auto;
+    white-space: nowrap;
+    line-height: 1.4;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .065em;
+  }
+  .hero-stage .hero-eyebrow .invitation-heading-text {
+    white-space: nowrap;
+    max-width: none;
+    min-width: 0;
+    flex: 0 0 auto;
+  }
+}
+
+
+/* ===== Original stylesheet: events-invitation-v36.css ===== */
+/* Version 36: three event-card actions, followed by a heartfelt invitation.
+   Extends V35 without disturbing photo, date, music, or animation behaviour. */
+
+/* Reserve a matching sixth grid row for actions, even for the single-button card. */
+.events .event-card-inner {
+  box-sizing: border-box;
+  grid-template-rows: 104px 126px 74px minmax(150px, 1fr) 112px 102px;
+  min-height: 760px;
+  padding: 27px 17px 28px;
+}
+.events .event-facts { min-height: 0; }
+.events .event-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 0;
+  padding: 6px 0 2px;
+}
+.events .event-action {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 244px);
+  min-height: 40px;
+  padding: 9px 14px;
+  border: 1px solid #c39b55;
+  border-radius: 24px;
+  color: #fffdf8;
+  background: #bc944f;
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .095em;
+  line-height: 1.3;
+  text-decoration: none;
+  transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.events .event-action--calendar {
+  background: transparent;
+  color: #996e35;
+}
+.events .event-action:hover { transform: translateY(-2px); background: #a47a3a; box-shadow: 0 5px 12px #79562a24; color:#fff; }
+.events .event-action:focus-visible { outline: 3px solid #8e5d3b; outline-offset: 3px; }
+
+/* The invitation message is presented directly on the section background,
+   with a subtle palace backdrop echoing the earlier venue section. */
+.invitation-note {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(94px, 10vw, 152px) 0 clamp(104px, 11vw, 160px);
+  background: linear-gradient(180deg, #faf5ef 0%, #fbf1e9 46%, #f7eee7 100%);
+}
+/* Match the countdown castle backdrop rather than using the old facade asset.
+   These are the same effective properties as .countdown .faded-palace. */
+.invitation-note .invitation-palace {
+  position: absolute;
+  inset: 18% 0 0;
+  z-index: 0;
+  background: url('assets/palace-skyline.webp') center 58% / cover no-repeat;
+  opacity: .11;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 4%, #000 36%, #000 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 4%, #000 36%, #000 80%, transparent 100%);
+  pointer-events: none;
+}
+
+.invitation-note-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 980px;
+}
+.invitation-note-ornament {
+  position: absolute;
+  z-index: 0;
+  width: clamp(145px, 27vw, 350px);
+  aspect-ratio: 1;
+  background: url('assets/floral-corners.webp') center/contain no-repeat;
+  opacity: .12;
+  pointer-events: none;
+}
+.invitation-note-ornament--left { top: -45px; left: -45px; }
+.invitation-note-ornament--right { right: -45px; bottom: -48px; transform: rotate(180deg); }
+.invitation-note-card {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: clamp(30px, 5vw, 46px) clamp(24px, 7vw, 86px) clamp(28px, 4vw, 40px);
+  max-width: 870px;
+  text-align: center;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.invitation-note-card::before { content: none; }
+.invitation-note-topline, .invitation-note-bottomline {
+  width: min(200px, 45%);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(194,154,98,.95) 50%, transparent);
+}
+.invitation-note-topline { margin-bottom: 38px; }
+.invitation-note-bottomline { margin-top: 26px; }
+.invitation-note-eyebrow,
+.invitation-note-signoff {
+  margin: 0;
+  color: #977246;
+  font: 700 11px/1.6 var(--sans);
+  letter-spacing: .27em;
+}
+.invitation-note h2 {
+  margin: 22px 0 15px;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(42px, 6.1vw, 74px);
+  line-height: 1.05;
+  font-style: italic;
+  color: #5c3d31;
+  text-wrap: balance;
+}
+.invitation-note-flourish {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 16px 0 30px;
+  color: #c09b59;
+}
+.invitation-note-flourish span:not(.invitation-note-diamond) { width: 45px; height: 1px; background: linear-gradient(90deg, transparent, #c09b59); }
+.invitation-note-flourish span:last-child { transform: rotate(180deg); }
+.invitation-note-diamond { font-size: 20px; }
+.invitation-note-message {
+  max-width: 660px;
+  margin: 0 auto 68px;
+  color: #644d3e;
+  font-family: var(--serif);
+  font-size: clamp(23px, 3.2vw, 35px);
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.42;
+  text-wrap: balance;
+}
+.invitation-note-signoff { margin-top: 0; }
+.invitation-note-names {
+  margin: 9px 0 0;
+  font: 600 clamp(32px, 4.3vw, 52px)/1.1 var(--serif);
+  color: #5c3d31;
+}
+.invitation-note-amp { color: #bb914f; font-style: italic; }
+@media (max-width: 900px) {
+  .events .event-card-inner {
+    grid-template-rows: 96px 118px 70px minmax(138px, 1fr) 112px 105px;
+    min-height: 750px;
+    padding: 25px 24px 26px;
+  }
+}
+@media (max-width: 600px) {
+  .events .event-card-inner {
+    grid-template-rows: 96px 128px 76px minmax(146px, 1fr) 120px 108px;
+    min-height: 790px;
+    padding: 28px 18px 28px;
+  }
+  .events .event-actions { gap: 8px; }
+  .events .event-action { width: min(100%, 238px); min-height: 40px; }
+  .invitation-note { padding: 82px 0 100px; }
+  .invitation-note .section-inner { width: min(100% - 30px, 980px); }
+  .invitation-note-card { padding: 44px 25px 54px; }
+  .invitation-note-eyebrow, .invitation-note-signoff { font-size: 9px; letter-spacing: .19em; }
+  .invitation-note h2 { font-size: clamp(39px, 10vw, 53px); }
+  .invitation-note-message { font-size: clamp(22px, 6.5vw, 27px); }
+  .invitation-note-ornament { width: 180px; opacity: .09; }
+}
+@media (max-width: 350px) {
+  .events .event-card-inner { padding-inline: 10px; min-height: 760px; }
+  .events .event-action { width: min(100%, 210px); }
+  .invitation-note h2 { font-size: 38px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .events .event-action { transition: none; }
+}
+
+
+/* ===== Original stylesheet: events-calendar-mobile-v37.css ===== */
+/* V37: Direct Google Calendar links and viewport-friendly event cards.
+   Desktop designs are intentionally untouched. */
+.events .event-calendar-alternative {
+  display: inline-block;
+  color: #8d704e;
+  font: 500 10px/1.3 var(--sans);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 2px 7px;
+  border-radius: 5px;
+}
+.events .event-calendar-alternative:hover { color: #614a32; }
+.events .event-calendar-alternative:focus-visible { outline: 2px solid #8e5d3b; outline-offset: 2px; }
+
+/* Tablet cards can be shorter than desktop because they stack vertically. */
+@media (min-width: 601px) and (max-width: 900px) {
+  .events .event-card-inner {
+    grid-template-rows: 88px 104px 60px minmax(100px, 1fr) 92px 111px;
+    min-height: 635px;
+    padding: 22px 24px 22px;
+  }
+  .events .event-flower { height: 72px; width: 158px; }
+  .events .event-card h3 { font-size: clamp(40px, 5.3vw, 49px); }
+  .events .event-quote { font-size: clamp(22px, 3vw, 27px); line-height: 1.2; }
+  .events .event-facts { gap: 8px; padding-top: 8px; }
+  .events .event-actions { gap: 6px; }
+}
+
+/* Mobile: preserve the same ornamental card aesthetic in a compact frame.
+   A card is roughly 530px tall rather than 760px. */
+@media (max-width: 600px) {
+  .events { padding-top: 65px; padding-bottom: 76px; }
+  .events .section-subhead { margin-bottom: 30px; }
+  .events .event-list { gap: 25px; max-width: 510px; }
+  .events .event-card { padding: 6px; border-radius: 14px; }
+  .events .event-card-inner {
+    grid-template-rows: 64px 94px 64px minmax(98px, 1fr) 84px 112px;
+    min-height: 548px;
+    height: auto;
+    padding: 18px 15px 18px;
+    box-sizing: border-box;
+    gap: 0;
+  }
+  .events .event-card-top { justify-content: center; }
+  .events .event-flower { width: 124px; height: 54px; }
+  .events .event-card h3,
+  .events .event-card.event-card--long-title h3 {
+    font-size: clamp(31px, 8.4vw, 37px);
+    line-height: .99;
+    min-height: 0;
+    margin: 0;
+    padding: 0 4px;
+  }
+  .events .event-date-block { gap: 8px; }
+  .events .event-date { font-size: 10.6px; line-height: 1.2; }
+  .events .event-quote {
+    font-size: clamp(18px, 4.95vw, 21.2px);
+    line-height: 1.18;
+    max-width: 350px;
+    padding: 2px 5px;
+    min-height: 0;
+  }
+  .events .event-facts { gap: 6px; padding-top: 7px; }
+  .events .event-detail,
+  .events .event-detail:first-child {
+    font-size: 12.6px;
+    line-height: 1.25;
+    gap: 6px;
+    letter-spacing: -.022em;
+  }
+  .events .detail-icon { width: 15px; height: 15px; flex-basis: 15px; margin-top: 0; }
+  .events .event-actions { gap: 5px; padding: 1px 0; }
+  .events .event-action {
+    width: min(100%, 236px);
+    min-height: 37px;
+    padding: 8px 11px;
+    font-size: 9.4px;
+    letter-spacing: .075em;
+  }
+  .events .event-calendar-alternative { font-size: 9px; padding: 1px 5px; }
+  .events .event-card-inner:before,
+  .events .event-card-inner:after { width: 27px; height: 27px; }
+}
+@media (max-width: 360px) {
+  .events .event-card-inner {
+    grid-template-rows: 54px 82px 56px minmax(90px, 1fr) 76px 106px;
+    min-height: 516px;
+    padding: 15px 9px 15px;
+  }
+  .events .event-flower { width: 113px; height: 48px; }
+  .events .event-card h3,
+  .events .event-card.event-card--long-title h3 { font-size: 30px; }
+  .events .event-quote { font-size: 17px; line-height: 1.15; padding: 1px 2px; }
+  .events .event-detail,
+  .events .event-detail:first-child { font-size: 11.3px; }
+  .events .event-actions { gap: 4px; }
+  .events .event-action { min-height: 33px; }
+}
+@media (max-width: 600px) and (max-height: 650px) {
+  .events .event-card-inner { min-height: 478px; }
+  .events .event-quote { font-size: 17px; }
+}
+
+
+/* ===== Original stylesheet: events-actions-v38.css ===== */
+/* V38 — clearer event hierarchy and accessible icon actions.
+   Applies after V37 so compact mobile cards remain intact. */
+.events .event-card h3,
+.events .event-card.event-card--long-title h3 {
+  font-size: clamp(39px, 3.3vw, 49px);
+}
+.events .event-date { font-size: 12.5px; }
+.events .event-date-block { gap: 10px; }
+.events .event-day {
+  margin: 0;
+  font: 700 11px/1.2 var(--sans);
+  letter-spacing: .22em;
+  color: #a87d47;
+  text-transform: uppercase;
+}
+.events .event-action { gap: 8px; }
+.events .event-action-icon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  display: block;
+  order: 2;
+}
+.events .event-action-label { display: inline-block; order: 1; }
+.events .event-detail,
+.events .event-detail:first-child {
+  font-size: 15px;
+  letter-spacing: -.03em;
+  white-space: nowrap;
+}
+@media (min-width: 901px) and (max-width: 1170px) {
+  .events .event-detail,
+  .events .event-detail:first-child { font-size: 13.4px; }
+  .events .event-card h3,
+  .events .event-card.event-card--long-title h3 { font-size: 40px; }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .events .event-card h3,
+  .events .event-card.event-card--long-title h3 { font-size: clamp(42px, 5.5vw, 51px); }
+  .events .event-date { font-size: 12px; }
+  .events .event-detail,
+  .events .event-detail:first-child { font-size: 14.3px; }
+}
+@media (max-width: 600px) {
+  .events .event-card h3,
+  .events .event-card.event-card--long-title h3 {
+    font-size: clamp(33px, 8.9vw, 39px);
+    line-height: .98;
+  }
+  .events .event-date { font-size: 12px; letter-spacing: .12em; }
+  .events .event-day { font-size: 10px; letter-spacing: .18em; }
+  .events .event-detail,
+  .events .event-detail:first-child {
+    font-size: clamp(12.2px, 3.35vw, 13.7px);
+    letter-spacing: -.035em;
+    gap: 5px;
+  }
+  .events .detail-icon { width: 14px; height: 14px; flex-basis: 14px; }
+  .events .event-action-icon { width: 14px; height: 14px; flex-basis: 14px; }
+  .events .event-action { gap: 7px; }
+}
+@media (max-width: 360px) {
+  .events .event-card h3,
+  .events .event-card.event-card--long-title h3 { font-size: 32px; }
+  .events .event-date { font-size: 11px; }
+  .events .event-day { font-size: 9.5px; }
+  .events .event-detail,
+  .events .event-detail:first-child { font-size: 12px; gap: 4px; }
+  .events .detail-icon { width: 13px; height: 13px; flex-basis: 13px; }
+}
+
+
+/* ===== Original stylesheet: polish-v41.css ===== */
+/* Version 41 — spatial refinement to the invitation message only.
+   The upper gold divider is positioned independently from the heading.
+   Existing typography, backdrop, ornaments and wording are unchanged. */
+.invitation-note-topline {
+  transform: translateY(-118px);
+}
+.invitation-note-eyebrow,
+.invitation-note h2 {
+  transform: translateY(-18px);
+}
+.invitation-note-flourish {
+  margin-bottom: 65px;
+}
+.invitation-note-message {
+  margin-bottom: 105px;
+}
+
+/* Keep the moved divider inside the section on compact devices. */
+@media (max-width: 900px) {
+  .invitation-note-topline { transform: translateY(-58px); }
+  .invitation-note-eyebrow,
+  .invitation-note h2 { transform: translateY(-12px); }
+  .invitation-note-flourish { margin-bottom: 49px; }
+  .invitation-note-message { margin-bottom: 85px; }
+}
+@media (max-width: 600px) {
+  .invitation-note-topline { transform: translateY(-55px); }
+  .invitation-note-eyebrow,
+  .invitation-note h2 { transform: translateY(-8px); }
+  .invitation-note-flourish { margin-bottom: 44px; }
+  .invitation-note-message { margin-bottom: 74px; }
+}
+
+
+/* ===== Original stylesheet: polish-v42.css ===== */
+/* Version 42 — quicker date confetti, streamlined event actions, shorter closing. */
+
+/* Text-only buttons; maps and Google Calendar URLs are unchanged. */
+.events .event-action {
+  gap: 0;
+}
+
+/* Keep the closing section immersive but noticeably shorter. */
+.thanks {
+  --heart-distance: 570px;
+  min-height: 510px;
+  padding: 60px 22px 86px;
+  box-sizing: border-box;
+}
+.thanks .thanks-content {
+  width: 100%;
+  max-width: 720px;
+  margin-inline: auto;
+  text-align: center;
+}
+.thanks h2 {
+  font-size: clamp(68px, 7.5vw, 100px);
+  margin: 0;
+}
+.thanks .thanks-rule {
+  margin-top: 20px;
+}
+.thanks .thanks-quote {
+  margin: 30px auto 0;
+  max-width: 700px;
+  font-size: clamp(23px, 2.65vw, 32px);
+  line-height: 1.3;
+}
+.thanks .thanks-signature {
+  position: absolute;
+  z-index: 4;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  margin: 0;
+  max-width: calc(100% - 20px);
+  white-space: nowrap;
+  text-align: center;
+  color: #e9d0a8;
+  font-family: var(--sans);
+  font-size: clamp(9px, 1.03vw, 12.5px);
+  font-weight: 600;
+  letter-spacing: .075em;
+  line-height: 1.5;
+  text-shadow: 0 1px 5px rgba(9, 28, 45, .4);
+}
+
+@media (max-width: 600px) {
+  .thanks {
+    --heart-distance: 500px;
+    min-height: 445px;
+    padding: 48px 15px 68px;
+  }
+  .thanks h2 {
+    font-size: clamp(62px, 15vw, 76px);
+  }
+  .thanks .thanks-rule {
+    margin-top: 17px;
+  }
+  .thanks .thanks-quote {
+    max-width: 94%;
+    font-size: clamp(21px, 5.6vw, 28px);
+    margin-top: 26px;
+    line-height: 1.3;
+  }
+  .thanks .thanks-signature {
+    bottom: 18px;
+    font-size: clamp(8px, 2.42vw, 11px);
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 350px) {
+  .thanks .thanks-signature {
+    font-size: 8px;
+    letter-spacing: -.01em;
+  }
+}
+
+
+/* ===== Original stylesheet: polish-v44.css ===== */
+/* Version 44 — add breathing room between the decorative couple-section
+   separator and the Our Moments eyebrow, without moving the separator. */
+@media (min-width: 981px) {
+  .memories { padding-top: 84px; } /* previously 34px */
+}
+@media (min-width: 601px) and (max-width: 980px) {
+  .memories { padding-top: 80px; } /* previously 42px */
+}
+@media (max-width: 600px) {
+  .memories { padding-top: 69px; } /* previously 40px */
+}
+
+
+/* ===== Original stylesheet: polish-v46.css ===== */
+/* V46 — Fit the invitation's faint castle on desktop without cropping it.
+   On narrow screens the established composition is preserved. */
+@media (min-width: 769px) {
+  .invitation-note .invitation-palace {
+    /* Cover was clipping the top, sides and base of the palace on wide displays. */
+    inset: 7% 0 0;
+    background-size: contain;
+    background-position: center 54%;
+    background-repeat: no-repeat;
+  }
+}
+
+
+/* ===== Original stylesheet: polish-v47.css ===== */
+/* Version 47 — keep only the requested invitation ornaments, refine closing type.
+   The invitation's LEFT floating floral ornament was removed from HTML.
+   Castle skyline and RIGHT floral ornament remain untouched. */
+
+/* Slightly smaller but still prominent Thank You heading and blessing.
+   No change to footer size, music controls, castle backdrop or falling hearts. */
+.thanks h2 {
+  font-size: clamp(60px, 6.6vw, 88px);
+}
+.thanks .thanks-quote {
+  font-size: clamp(21px, 2.35vw, 28px);
+}
+@media (max-width: 600px) {
+  .thanks h2 { font-size: clamp(53px, 13vw, 66px); }
+  .thanks .thanks-quote { font-size: clamp(18px, 4.9vw, 24px); }
+}
+
+
+/* ===== Original stylesheet: cover-motifs-v49.css ===== */
+/* Version 49 — Complete, non-stretching cover motifs.
+   The source artwork is original to this wedding invitation and is separated
+   into two full corner decorations. Each is displayed at one fixed pixel size
+   irrespective of viewport dimensions; only visibility switches at 992px.
+   They are independent of the opening doors' background sizing so the image
+   cannot repeat, stretch, or be cut off at the center seam. */
+
+/* Remove the old full-sheet image tiled/scaled across the doors. Keep the
+   paper-toned background and the existing decorative door border lines. */
+.invitation-gate .gate-door {
+  background-image: linear-gradient(110deg,rgba(255,254,251,.72),rgba(239,231,221,.5));
+  background-color: #f4efe8;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.invitation-gate .gate-motifs {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.invitation-gate .gate-motif {
+  position: absolute;
+  width: 210px; /* Fixed across phone, tablet, landscape, and desktop. */
+  height: auto;
+  opacity: .78;
+  pointer-events: none;
+  transition: transform 1.35s cubic-bezier(.75,.03,.22,1);
+  will-change: transform;
+}
+.invitation-gate .gate-motif img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+}
+/* Distinct four corners without any incomplete image fragments. */
+.invitation-gate .gate-motif--top-left    { top: 15px; left: 16px; }
+.invitation-gate .gate-motif--top-right   { top: 15px; right: 16px; }
+.invitation-gate .gate-motif--bottom-left { bottom: 15px; left: 16px; }
+.invitation-gate .gate-motif--bottom-right{ bottom: 15px; right: 16px; }
+/* Mirror the original left/right compositions rather than cropping any part. */
+.invitation-gate .gate-motif--top-right img,
+.invitation-gate .gate-motif--bottom-left img { transform: scaleX(-1); }
+
+/* The motifs travel out with their corresponding opening door. */
+.gate-open .gate-motif--top-left,
+.gate-open .gate-motif--bottom-left { transform: translateX(-110vw); }
+.gate-open .gate-motif--top-right,
+.gate-open .gate-motif--bottom-right { transform: translateX(110vw); }
+
+/* The invitation's original twin border frames still surround each door.
+   Earlier rules unintentionally set both horizontal sides to auto, collapsing
+   each frame to zero width; explicitly restore the intended even insets. */
+.invitation-gate .gate-door::before { inset: 34px; }
+.invitation-gate .gate-door::after  { inset: 41px; }
+@media (max-width: 600px) {
+  .invitation-gate .gate-door::before { inset: 16px; }
+  .invitation-gate .gate-door::after  { inset: 22px; }
+}
+
+/* The visibility breakpoint changes ONLY motif count, never image dimensions. */
+@media (max-width: 991px) {
+  .invitation-gate .gate-motif--top-right,
+  .invitation-gate .gate-motif--bottom-left { display: none; }
+}
+@media (min-width: 992px) {
+  .invitation-gate .gate-motif--top-right,
+  .invitation-gate .gate-motif--bottom-left { display: block; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .invitation-gate .gate-motif { transition: none; }
+}
+
+
+/* ===== Original stylesheet: polish-v51.css ===== */
+/* Version 51 — closing polish, responsive spacing and music indicator. */
+
+/* 1. Echo the bride/groom divider under the invitation sign-off. */
+.invitation-note .invitation-note-separator {
+  display: flex;
+  width: min(100%, 420px);
+  margin: 32px auto 0;
+  gap: 18px;
+  align-items: center;
+  opacity: .92;
+}
+.invitation-note .invitation-note-separator .separator-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(202,165,95,.85), transparent);
+}
+.invitation-note .invitation-note-separator .separator-emblem {
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  background: url('assets/floral-mark.svg') center / contain no-repeat;
+  opacity: .8;
+}
+/* Don't retain the former bare line beneath the names. */
+.invitation-note-bottomline { display:none; }
+
+/* 2. Four quicker, staggered volume bars; keep them still when muted/paused. */
+#musicToggle .sound-bars { height: 10px; gap: 2.5px; }
+#musicToggle .sound-bars i { width: 2px; transform-origin: 50% 100%; }
+#musicToggle .sound-bars i:nth-child(1) { height: 5px; }
+#musicToggle .sound-bars i:nth-child(2) { height: 9px; }
+#musicToggle .sound-bars i:nth-child(3) { height: 7px; }
+#musicToggle .sound-bars i:nth-child(4) { height: 6px; }
+#musicToggle[data-muted="false"][data-playing="true"] .sound-bars i {
+  animation: audioBarsV51 480ms ease-in-out infinite alternate;
+}
+#musicToggle[data-muted="false"][data-playing="true"] .sound-bars i:nth-child(1) { animation-delay: -120ms; }
+#musicToggle[data-muted="false"][data-playing="true"] .sound-bars i:nth-child(2) { animation-delay: -355ms; }
+#musicToggle[data-muted="false"][data-playing="true"] .sound-bars i:nth-child(3) { animation-delay: -230ms; }
+#musicToggle[data-muted="false"][data-playing="true"] .sound-bars i:nth-child(4) { animation-delay: -435ms; }
+@keyframes audioBarsV51 {
+  from { transform: scaleY(.36); }
+  to { transform: scaleY(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  #musicToggle .sound-bars i { animation:none !important; }
+}
+
+/* 3. Fit the COMPLETE skyline illustration inside the desktop Thank You area.
+   Background height is bounded by the footer, preventing the old top crop.
+   Shorter footer also reduces the uninterrupted blue strip at its bottom. */
+@media (min-width: 769px) {
+  .thanks {
+    min-height: 465px;
+    padding: 42px 22px 56px;
+  }
+  .thanks .thanks-palace {
+    left: 50%;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    width: min(100%, 660px);
+    transform: translateX(-50%);
+    background-image: url('assets/palace-skyline.webp');
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Fade the artwork's own side edges, rather than the full viewport:
+       this avoids an obvious narrow rectangular image boundary. */
+    -webkit-mask-image: radial-gradient(ellipse 42% 70% at 50% 45%, #000 47%, rgba(0,0,0,.76) 62%, transparent 94%);
+    mask-image: radial-gradient(ellipse 42% 70% at 50% 45%, #000 47%, rgba(0,0,0,.76) 62%, transparent 94%);
+  }
+}
+
+/* 4. Slightly tighter transition between Celebrations and invitation message. */
+@media (min-width: 901px) {
+  .events { padding-bottom: 120px; }
+  .invitation-note { padding-top: clamp(86px, 8.6vw, 128px); }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .events { padding-bottom: 112px; }
+  .invitation-note { padding-top: 86px; }
+}
+@media (max-width: 600px) {
+  .events { padding-bottom: 112px; }
+  .invitation-note { padding-top: 76px; }
+  .invitation-note .invitation-note-separator { margin-top: 26px; gap: 12px; }
+  .invitation-note .invitation-note-separator .separator-line { min-width: 0; }
+}
+
+
+/* ===== Original stylesheet: scroll-smooth-v52.css ===== */
+/* V52 — compositor-friendly scroll performance without changing the native
+   scroll physics, hero overlay distance, or reveal timing. */
+.scroll-progress {
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: none;
+  will-change: transform;
+}
+/* Reveal moves are GPU-composited, not layout-affecting `top`/`margin`. */
+.reveal { transform: translate3d(0, 32px, 0); }
+.reveal.visible { transform: translate3d(0, 0, 0); }
+.hero-stage .hero-content,
+.hero-stage .palace-image {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+/* Backdrop blur over oversized cards is particularly expensive during touch
+   scrolling; use visually equivalent translucent paper on small screens. */
+@media (max-width: 768px) {
+  .meet .person-card {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color: rgba(255,255,255,.90);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-progress { will-change: auto; }
+  .reveal, .reveal.visible { transform: none; }
+}
+
+
+/* ===== Original stylesheet: polish-v53.css ===== */
+/* Version 53 — targeted visual refinements. */
+
+/* Modestly smaller handwritten invitation message at all screen sizes. */
+.invitation-note .invitation-note-message {
+  font-size: clamp(21px, 2.9vw, 31px);
+}
+
+@media (max-width: 600px) {
+  .invitation-note .invitation-note-message {
+    font-size: clamp(19px, 5.8vw, 24px);
+  }
+
+  /* Keep the 34 desktop hearts exactly as they are; omit 1 out of 4
+     on phones (26 visible) without changing the remaining colours,
+     speeds, positions or opacity. Hidden hearts do not animate. */
+  .thanks .falling-heart:nth-child(4n) {
+    display: none;
+  }
+}
+
+
+/* ===== Version 56: mobile event cards with viewport-aware breathing room =====
+   The desktop/tablet card geometry remains exactly as in Version 55.
+   Short phones keep compact cards; taller phones get fuller-height cards,
+   so the next event's information is not visible while viewing the current one. */
+@media (max-width: 600px) {
+  .events .event-list { gap: 25px; }
+  .events .event-card-inner {
+    min-height: clamp(576px, calc(84svh + 5px), 795px);
+    grid-template-rows:
+      minmax(62px, .9fr)
+      minmax(87px, 1.25fr)
+      minmax(56px, .8fr)
+      minmax(94px, 1.35fr)
+      minmax(75px, 1.05fr)
+      minmax(104px, 1.5fr);
+    row-gap: 4px;
+    padding: 20px 15px 20px;
+  }
+}
+@media (max-width: 360px) {
+  .events .event-card-inner {
+    min-height: clamp(516px, calc(74svh + 60px), 670px);
+    grid-template-rows:
+      minmax(52px, .75fr)
+      minmax(80px, 1.15fr)
+      minmax(54px, .78fr)
+      minmax(90px, 1.3fr)
+      minmax(72px, 1.04fr)
+      minmax(99px, 1.45fr);
+    row-gap: 3px;
+    padding: 16px 9px 16px;
+  }
+}
+/* Fallback for browsers without small viewport units. */
+@supports not (height: 100svh) {
+  @media (max-width: 600px) {
+    .events .event-card-inner { min-height: clamp(576px, calc(84vh + 5px), 795px); }
+  }
+  @media (max-width: 360px) {
+    .events .event-card-inner { min-height: clamp(516px, calc(74vh + 60px), 670px); }
+  }
+}
+
+
+/* ===== Version 57: mobile cards balanced by screen size =====
+   Gradually curb excess height on tall phones (no hard viewport-height break);
+   small iPhone-style screens retain their compact geometry. Increase text
+   proportionately as more mobile viewport space becomes available.
+   Tablet and desktop styles are untouched. */
+@media (min-width: 361px) and (max-width: 600px) {
+  .events .event-card-inner {
+    min-height: clamp(576px, calc(65svh + 125px), 715px);
+    grid-template-rows:
+      minmax(60px, .90fr)
+      minmax(81px, 1.20fr)
+      minmax(54px, .85fr)
+      minmax(97px, 1.32fr)
+      minmax(76px, 1.08fr)
+      minmax(104px, 1.48fr);
+    row-gap: 4px;
+    padding: 18px 15px;
+  }
+  .events .event-flower {
+    width: clamp(124px, calc(31.8vw + .5svh - 3.7px), 145px);
+    height: 59px;
+  }
+  .events .event-card h3,
+  .events .event-card.event-card--long-title h3 {
+    font-size: clamp(33px, calc(8.9vw + 2svh - 14.8px), 44px);
+    line-height: 1.02;
+  }
+  .events .event-date {
+    font-size: clamp(12px, calc(12px + .7svh - 5.18px), 13.6px);
+  }
+  .events .event-day {
+    font-size: clamp(10px, calc(10px + .4svh - 2.96px), 10.9px);
+  }
+  .events .event-quote {
+    font-size: clamp(18px, calc(4.95vw + 1.5svh - 11.1px), 24px);
+    line-height: 1.22;
+  }
+  .events .event-detail,
+  .events .event-detail:first-child {
+    font-size: clamp(12.2px, calc(3.35vw + .7svh - 5.18px), 14.7px);
+    letter-spacing: -.035em;
+  }
+  .events .event-action {
+    font-size: clamp(9.4px, calc(9.4px + .7svh - 5.18px), 10.8px);
+  }
+}
+@supports not (height: 100svh) {
+  @media (min-width: 361px) and (max-width: 600px) {
+    .events .event-card-inner { min-height: clamp(576px, calc(65vh + 125px), 715px); }
+  }
+}

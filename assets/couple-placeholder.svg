@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 640">
+ <defs><linearGradient id="bg" x2=".8" y2="1"><stop stop-color="#e8d2bd"/><stop offset="1" stop-color="#f7eee5"/></linearGradient><linearGradient id="fig" x2="1" y2="1"><stop stop-color="#bfa487"/><stop offset="1" stop-color="#d8c2ab"/></linearGradient></defs>
+ <rect width="500" height="640" fill="url(#bg)"/><g opacity=".4" fill="none" stroke="#c59e68"><path d="M22 600Q95 420 75 120"/><path d="M480 615Q400 420 422 100"/><path d="M58 210Q100 193 110 151M425 280Q380 255 357 222"/><path d="M54 380Q110 340 135 309M428 410Q380 385 345 344"/></g>
+ <g fill="url(#fig)"><circle cx="211" cy="273" r="52"/><path d="M119 493Q114 359 208 349Q291 360 292 493Z"/><circle cx="313" cy="277" r="47"/><path d="M264 498Q273 368 313 365Q397 369 405 498Z"/></g>
+ <g fill="none" stroke="#f8ede0" stroke-width="3" opacity=".8"><path d="M198 226Q206 202 223 225M292 233Q304 212 321 234"/><path d="M75 540h350"/></g>
+ <text x="250" y="558" fill="#93714f" font-size="15" letter-spacing="4" text-anchor="middle" font-family="Georgia,serif">ADD YOUR PHOTO</text></svg>

@@ -1,0 +1,9 @@
+/* Bride-side event venue labels: prevent the two longer Malda addresses from
+   clipping in narrow three-column desktop/tablet widths. All other styles
+   remain byte-identical to groom-side approved V57. */
+@media (min-width: 901px) and (max-width: 1120px) {
+  .events .event-detail:first-child {
+    font-size: clamp(9.6px, 1vw, 11px) !important;
+    letter-spacing: -.04em;
+  }
+}
