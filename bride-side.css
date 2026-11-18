@@ -62,3 +62,23 @@
 @media (min-width: 901px) and (max-width: 980px) {
   .events .event-list { width: 100%; max-width: none; }
 }
+
+/* Version 62: four celebration cards. On desktop/landscape display two cards
+   side by side in source order: Mehandi + Haldi, Wedding + Reception.
+   Tablets and phones continue in a single, vertically stacked column.
+   Keep the grid centered and comfortably readable on wider displays. */
+@media (min-width: 901px) {
+  .events .event-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    max-width: 1000px;
+    margin-inline: auto;
+    gap: 26px;
+  }
+}
+@media (max-width: 900px) {
+  .events .event-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

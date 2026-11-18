@@ -1,5 +1,6 @@
 /*
   Bride-side settings layered on top of Version 57's config.js.
+  V62 adds Reception on 15 Dec 2026; mobile cards stack, desktop cards form two rows.
   Crucially this does not change WEDDING.photos or WEDDING.music, so using
   these files over a COPY of the latest groom-side repo preserves its exact
   uploaded desktop/mobile photographs and audio.
@@ -53,6 +54,19 @@
       googleCalendarEnd: '20261213T230000', // 11:00 PM IST
       googleCalendarDescription: 'Wedding on Sunday, 13 December 2026, from 7:00 PM to 11:00 PM IST. Celebrate Malika and Sourav! Map: https://maps.app.goo.gl/CpzfpoBqnjp4r3gaA',
       googleCalendarLocation: 'Sukanta Smriti Sangha Club, Mahananda Pally, Malda, West Bengal, India'
+    },
+    {
+      title: 'Reception',
+      date: '15 DECEMBER 2026',
+      time: '7:00 p.m. onwards',
+      message: '“Celebrate a beautiful new beginning with us.”',
+      venue: 'Rajeswari Palace, Rupnarayanpur',
+      mapsUrl: 'https://maps.app.goo.gl/6Ux3ahxtAAGDNo6D8',
+      googleCalendarTitle: 'Malika & Sourav - Reception',
+      googleCalendarStart: '20261215T190000',
+      googleCalendarEnd: '20261215T230000', // 11:00 PM IST
+      googleCalendarDescription: 'Reception on Tuesday, 15 December 2026, from 7:00 PM to 11:00 PM IST. Celebrate with Malika and Sourav! Map: https://maps.app.goo.gl/6Ux3ahxtAAGDNo6D8',
+      googleCalendarLocation: 'Rajeswari Palace, Rupnarayanpur, West Bengal, India'
     }
   ];
 })();
