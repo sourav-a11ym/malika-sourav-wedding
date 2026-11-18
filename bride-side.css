@@ -82,3 +82,29 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* V63: venue and time use the same font size in every card.
+   Do not affect card titles, dates, descriptions, icons, or buttons.
+   All cards receive identical font sizing at each viewport breakpoint. */
+.events .event-facts .event-detail,
+.events .event-facts .event-detail.event-detail--venue,
+.events .event-facts .event-detail.event-detail--venue:first-child {
+  font-size: 13px;
+  line-height: 1.35;
+  letter-spacing: -.035em;
+}
+@media (min-width: 901px) and (max-width: 1170px) {
+  .events .event-facts .event-detail,
+  .events .event-facts .event-detail.event-detail--venue,
+  .events .event-facts .event-detail.event-detail--venue:first-child { font-size: 12px; }
+}
+@media (max-width: 900px) {
+  .events .event-facts .event-detail,
+  .events .event-facts .event-detail.event-detail--venue,
+  .events .event-facts .event-detail.event-detail--venue:first-child { font-size: 13px; }
+}
+@media (max-width: 360px) {
+  .events .event-facts .event-detail,
+  .events .event-facts .event-detail.event-detail--venue,
+  .events .event-facts .event-detail.event-detail--venue:first-child { font-size: 11.3px; }
+}
