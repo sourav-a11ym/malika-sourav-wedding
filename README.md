@@ -41,3 +41,9 @@ Site is static. In Netlify: Build command leave blank, Publish directory `.` (re
 - Haldi description: “Join us for a sunlit celebration of turmeric, laughter, love, and blessings.”
 - Wedding description: “Join us as we exchange our vows and start our new journey together forever.”
 - No changes to gallery images, background music, animations, or existing event links.
+
+## Development Testing
+
+This branch is used for testing the Sourav and Malika wedding invitation website through Netlify Deploy Previews.
+
+The website is currently under development.
