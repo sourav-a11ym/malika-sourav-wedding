@@ -1,4 +1,4 @@
-/* Bride-side v59: intentionally split each event's location into exactly two
+/* Bride-side v60: intentionally split each event's location into exactly two
    visible lines, and prevent long addresses from escaping the event cards.
    This overrides only event-venue layout from the shared site.css. */
 .events .event-detail.event-detail--venue,
@@ -8,7 +8,7 @@
   min-width: 0;
   max-width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 6px;
   white-space: normal;
@@ -16,6 +16,12 @@
   font-size: 13px;
   line-height: 1.35;
   letter-spacing: -.035em;
+}
+/* Align the location pin with the FIRST address line, not the midpoint
+   between both lines. The rest of the two-line venue layout is unchanged. */
+.events .event-detail--venue .detail-icon {
+  align-self: flex-start;
+  margin-top: 1px;
 }
 .events .event-detail--venue .event-venue-lines {
   display: flex;

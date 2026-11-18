@@ -1,4 +1,4 @@
-# Malika & Sourav — Bride-side Wedding Invitation (Version 59)
+# Malika & Sourav — Bride-side Wedding Invitation (Version 60)
 
 ## Based on approved groom-side V57
 
@@ -42,8 +42,8 @@ Site is static. In Netlify: Build command leave blank, Publish directory `.` (re
 - Wedding description: “Join us as we exchange our vows and start our new journey together forever.”
 - No changes to gallery images, background music, animations, or existing event links.
 
-## Development Testing
+## Version 60 alignment fix
 
-This branch is used for testing the Sourav and Malika wedding invitation website through Netlify Deploy Previews.
-
-The website is currently under development.
+- The gold location-pin icon in all three Celebration event cards now aligns vertically with the **first** of the two venue-address lines (rather than being vertically centered across both lines).
+- Only `bride-side.css` changed from v59. Replace that file in your repository for a minimal update, or use the full v60 ZIP.
+- Venue wording, line breaks, countdown, event messages, photos, maps/calendar links, and site functionality remain unchanged.
