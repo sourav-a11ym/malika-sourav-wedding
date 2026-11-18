@@ -31,7 +31,7 @@
       title: 'Haldi',
       date: '13 DECEMBER 2026',
       time: '11:00 a.m. onwards',
-      message: '“Join us for a sunlit celebration of turmeric, laughter, love, and blessings.”',
+      message: '“A morning filled with laughter, love, and the vibrant hues of yellow.”',
       venue: 'Own Residence, Mahananda Pally, Malda',
       venueLines: ['Own Residence, Mahananda Pally', 'Malda'],
       mapsUrl: '', // Hide View Directions button for Haldi
