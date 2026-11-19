@@ -73,9 +73,19 @@
     }
     return svg;
   }
-  function eventDetail(kind, value) {
+  function eventDetail(kind, value, venueLines) {
     const row = textElement('p', 'event-detail');
-    row.append(detailIcon(kind), textElement('span', '', value));
+    row.append(detailIcon(kind));
+    if (kind === 'location' && Array.isArray(venueLines) && venueLines.length === 2) {
+      // Preserve the two intentional address lines in every viewport, rather
+      // than relying on wrapping that varies between phones and desktop.
+      row.classList.add('event-detail--venue');
+      const lines = textElement('span', 'event-venue-lines');
+      venueLines.forEach(line => lines.append(textElement('span', 'event-venue-line', line)));
+      row.append(lines);
+    } else {
+      row.append(textElement('span', '', value));
+    }
     return row;
   }
   function eventWeekday(event) {
@@ -104,7 +114,7 @@
       textElement('p', 'event-day', weekday)
     );
     const facts = textElement('div', 'event-facts');
-    facts.append(eventDetail('location', event.venue), eventDetail('time', event.time));
+    facts.append(eventDetail('location', event.venue, event.venueLines), eventDetail('time', event.time));
     const actions = textElement('div', 'event-actions');
     // The provided Maps short URLs open the exact saved venue place, not the directions UI.
     // Mehandi has no map link by design; Haldi and Wedding use the supplied place link.
